@@ -48,9 +48,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration=production && npm run xi18n",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "xi18n": "localize-extract -r . -s \"dist/rahimalizada/ngx-common/fesm2015/*.js\" -f xlf2 -o i18n/messages.xlf2"
   },
   "private": true,
   "dependencies": {
