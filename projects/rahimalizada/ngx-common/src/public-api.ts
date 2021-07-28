@@ -22,6 +22,7 @@ export * from './lib/interceptors/progress-indicator.interceptor';
 export * from './lib/interceptors/pwa-launch-mode.interceptor';
 export * from './lib/model/account/account-activation-request.model';
 export * from './lib/model/account/activation-code-request.model';
+export * from './lib/model/address/country.enum';
 export * from './lib/model/auth/auth-result.model';
 export * from './lib/model/auth/login-request.model';
 export * from './lib/model/auth/password-change-request.model';
@@ -69,3 +70,4 @@ export * from './lib/validators/not-blank-validator';
 export * from './lib/validators/password-validator';
 export * from './lib/validators/pattern-validator';
 export * from './lib/validators/url-validator';
+
