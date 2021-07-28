@@ -2,6 +2,8 @@
  * Public API Surface of ngx-common
  */
 
+import '@angular/localize/init';
+
 export * from './lib/auth/abstract-auth.guard';
 export * from './lib/auth/abstract-auth.service';
 export * from './lib/auth/abstract-jwt.interceptor';
@@ -67,5 +69,3 @@ export * from './lib/validators/not-blank-validator';
 export * from './lib/validators/password-validator';
 export * from './lib/validators/pattern-validator';
 export * from './lib/validators/url-validator';
-
-
