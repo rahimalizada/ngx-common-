@@ -8,7 +8,6 @@ export enum Country {
 export class CountrySpec {
   constructor(
     public title: string,
-    public description: string,
     public numericCode: string,
     public currency: string,
     public currencySymbol: string,
@@ -17,50 +16,16 @@ export class CountrySpec {
 }
 
 export const CountryData = new Map<Country, CountrySpec>([
-  [
-    Country.TURKEY,
-    new CountrySpec(
-      $localize`:@@COUNTRY_TURKEY_TITLE:TURKEY`,
-      $localize`:@@COUNTRY_TURKEY_DESCRIPTION:TURKEY`,
-      '792',
-      'TRY',
-      '₺',
-      'country-turkey',
-    ),
-  ],
-  [
-    Country.USA,
-    new CountrySpec($localize`:@@COUNTRY_USA_TITLE:USA`, $localize`:@@COUNTRY_USA_DESCRIPTION:USA`, '840', 'USD', '$', 'country-usa'),
-  ],
-  [
-    Country.UKRAINE,
-    new CountrySpec(
-      $localize`:@@COUNTRY_UKRAINE_TITLE:UKRAINE`,
-      $localize`:@@COUNTRY_UKRAINE_DESCRIPTION:UKRAINE`,
-      '804',
-      'UAH',
-      '₴',
-      'country-ukraine',
-    ),
-  ],
-  [
-    Country.AZERBAIJAN,
-    new CountrySpec(
-      $localize`:@@COUNTRY_AZERBAIJAN_TITLE:AZERBAIJAN`,
-      $localize`:@@COUNTRY_AZERBAIJAN_DESCRIPTION:AZERBAIJAN`,
-      '031',
-      'AZN',
-      '₼',
-      'country-azerbaijan',
-    ),
-  ],
+  [Country.TURKEY, new CountrySpec($localize`:@@COUNTRY_TURKEY_TITLE:TURKEY`, '792', 'TRY', '₺', 'country-turkey')],
+  [Country.USA, new CountrySpec($localize`:@@COUNTRY_USA_TITLE:USA`, '840', 'USD', '$', 'country-usa')],
+  [Country.UKRAINE, new CountrySpec($localize`:@@COUNTRY_UKRAINE_TITLE:UKRAINE`, '804', 'UAH', '₴', 'country-ukraine')],
+  [Country.AZERBAIJAN, new CountrySpec($localize`:@@COUNTRY_AZERBAIJAN_TITLE:AZERBAIJAN`, '031', 'AZN', '₼', 'country-azerbaijan')],
 ]);
 
 export class CountryListSpec {
   constructor(
     public country: Country,
     public title: string,
-    public description: string,
     public numericCode: string,
     public currency: string,
     public currencySymbol: string,

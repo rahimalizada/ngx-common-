@@ -11,25 +11,7 @@
         <target>Türkiyə</target>
       </segment>
     </unit>
-    <unit id="COUNTRY_TURKEY_DESCRIPTION">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:24,22</note>
-      </notes>
-      <segment state="translated">
-        <source>TURKEY</source>
-        <target>Türkiyə</target>
-      </segment>
-    </unit>
     <unit id="COUNTRY_USA_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:33</note>
-      </notes>
-      <segment state="translated">
-        <source>USA</source>
-        <target>ABŞ</target>
-      </segment>
-    </unit>
-    <unit id="COUNTRY_USA_DESCRIPTION">
       <notes>
         <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:33</note>
       </notes>
@@ -47,28 +29,10 @@
         <target>Ukrayna</target>
       </segment>
     </unit>
-    <unit id="COUNTRY_UKRAINE_DESCRIPTION">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:39,37</note>
-      </notes>
-      <segment state="translated">
-        <source>UKRAINE</source>
-        <target>Ukrayna</target>
-      </segment>
-    </unit>
     <unit id="COUNTRY_AZERBAIJAN_TITLE">
       <notes>
         <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:49,48</note>
         <note category="location">projects/safex-frontend/src/app/user/address-edit/address-edit.component.html:21</note>
-      </notes>
-      <segment state="translated">
-        <source>AZERBAIJAN</source>
-        <target>Azərbaycan</target>
-      </segment>
-    </unit>
-    <unit id="COUNTRY_AZERBAIJAN_DESCRIPTION">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:50,48</note>
       </notes>
       <segment state="translated">
         <source>AZERBAIJAN</source>
