@@ -32,11 +32,28 @@
     <unit id="COUNTRY_AZERBAIJAN_TITLE">
       <notes>
         <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:49,48</note>
-        <note category="location">projects/safex-frontend/src/app/user/address-edit/address-edit.component.html:21</note>
       </notes>
       <segment state="translated">
         <source>AZERBAIJAN</source>
         <target>Azərbaycan</target>
+      </segment>
+    </unit>
+    <unit id="GENDER_MALE_TITLE">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/gender.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>MALE</source>
+        <target>Kişı</target>
+      </segment>
+    </unit>
+    <unit id="GENDER_FEMALE_TITLE">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/gender.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>FEMALE</source>
+        <target>Qadın</target>
       </segment>
     </unit>
   </file>
