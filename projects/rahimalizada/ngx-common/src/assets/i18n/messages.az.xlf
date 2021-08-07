@@ -56,5 +56,77 @@
         <target>Qadın</target>
       </segment>
     </unit>
+    <unit id="ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>PENDING_VERIFICATION</source>
+        <target>Yoxlanılmayıb</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_PENDING_VERIFICATION_DESCRIPTION">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>PENDING_VERIFICATION</source>
+        <target>İstifadəçi aktivasiya kodunu təsdiq edib lakin administrasiya tərəfindən yoxlanıldıqdan sonra istifadə edilə bilər</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_PENDING_ACTIVATION_TITLE">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>PENDING_ACTIVATION</source>
+        <target>Deaktiv</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_PENDING_ACTIVATION_DESCRIPTION">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>PENDING_ACTIVATION</source>
+        <target>İstifadəçi aktivasiya kodunu təsdiq etməyib</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_ACTIVE_TITLE">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>ACTIVE</source>
+        <target>Aktiv</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_ACTIVE_DESCRIPTION">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>ACTIVE</source>
+        <target>Hesab aktivdir</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_DISABLED_TITLE">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>DISABLED</source>
+        <target>Qapalı</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_DISABLED_DESCRIPTION">
+      <notes>
+        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
+      </notes>
+      <segment state="translated">
+        <source>DISABLED</source>
+        <target>Hesab qapalıdır və yalnız administrasiya tərəfindən aktiv edildikdən sonra istifadə edilə bilər</target>
+      </segment>
+    </unit>
   </file>
 </xliff>
