@@ -65,6 +65,54 @@
         <source>DISABLED</source>
       </segment>
     </unit>
+    <unit id="ACCOUNT_TYPE_NORMAL_TITLE">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:15</note>
+      </notes>
+      <segment>
+        <source>NORMAL</source>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_NORMAL_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:16</note>
+      </notes>
+      <segment>
+        <source>NORMAL</source>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_TRIAL_TITLE">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:23</note>
+      </notes>
+      <segment>
+        <source>TRIAL</source>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_TRIAL_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:24</note>
+      </notes>
+      <segment>
+        <source>TRIAL</source>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PRO_TITLE">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:30</note>
+      </notes>
+      <segment>
+        <source>PRO</source>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PRO_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:30</note>
+      </notes>
+      <segment>
+        <source>PRO</source>
+      </segment>
+    </unit>
     <unit id="GENDER_MALE_TITLE">
       <notes>
         <note category="location">../../lib/model/account/gender.enum.ts:11</note>

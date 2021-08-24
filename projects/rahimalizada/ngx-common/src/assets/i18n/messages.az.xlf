@@ -164,5 +164,59 @@
         <target>Hesab qapalıdır və yalnız administrasiya tərəfindən aktiv edildikdən sonra istifadə edilə bilər</target>
       </segment>
     </unit>
+    <unit id="ACCOUNT_TYPE_NORMAL_TITLE">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:15</note>
+      </notes>
+      <segment state="translated">
+        <source>NORMAL</source>
+        <target>Normal</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_NORMAL_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:16</note>
+      </notes>
+      <segment state="translated">
+        <source>NORMAL</source>
+        <target>Normal hesab</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_TRIAL_TITLE">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:23</note>
+      </notes>
+      <segment state="translated">
+        <source>TRIAL</source>
+        <target>Sınaq</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_TRIAL_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:24</note>
+      </notes>
+      <segment state="translated">
+        <source>TRIAL</source>
+        <target>Sınaq müddətli hesab</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PRO_TITLE">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:30</note>
+      </notes>
+      <segment state="translated">
+        <source>PRO</source>
+        <target>Peşəkar</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PRO_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/account/account-type.enum.ts:30</note>
+      </notes>
+      <segment state="translated">
+        <source>PRO</source>
+        <target>Peşəkar hesab növü</target>
+      </segment>
+    </unit>
   </file>
 </xliff>

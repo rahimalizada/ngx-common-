@@ -22,6 +22,7 @@ export * from './lib/interceptors/progress-indicator.interceptor';
 export * from './lib/interceptors/pwa-launch-mode.interceptor';
 export * from './lib/model/account/account-activation-request.model';
 export * from './lib/model/account/account-status.enum';
+export * from './lib/model/account/account-type.enum';
 export * from './lib/model/account/activation-code-request.model';
 export * from './lib/model/account/gender.enum';
 export * from './lib/model/account/tos-status.enum';
