@@ -129,6 +129,22 @@
         <source>FEMALE</source>
       </segment>
     </unit>
+    <unit id="GENERIC_ACCOUNT_ROLE_USER_TITLE">
+      <notes>
+        <note category="location">../../lib/model/account/generic-account-role.enum.ts:13</note>
+      </notes>
+      <segment>
+        <source>USER</source>
+      </segment>
+    </unit>
+    <unit id="GENERIC_ACCOUNT_ROLE_USER_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/account/generic-account-role.enum.ts:14</note>
+      </notes>
+      <segment>
+        <source>USER</source>
+      </segment>
+    </unit>
     <unit id="TOS_STATUS_ACCEPTED_TITLE">
       <notes>
         <note category="location">../../lib/model/account/tos-status.enum.ts:14</note>
