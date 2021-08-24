@@ -1,4 +1,4 @@
-import { WithCredentials } from '../credentials/with-credentials.model';
+import { WithCredentials } from '../account/with-credentials.model';
 
 export interface BackendAccount extends WithCredentials<string> {
   id: string;
