@@ -31,7 +31,6 @@ export * from './lib/model/account/credentials.model';
 export * from './lib/model/account/gender.enum';
 export * from './lib/model/account/generic-account-role.enum';
 export * from './lib/model/account/tos-status.enum';
-export * from './lib/model/account/with-credentials.model';
 export * from './lib/model/account/with-permissions.model';
 export * from './lib/model/address/address.model';
 export * from './lib/model/address/country.enum';
