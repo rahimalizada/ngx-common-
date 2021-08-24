@@ -13,7 +13,7 @@ export class BackendAccountService extends AbstractRestService<BackendAccount> {
     super(httpClient, '/api/backend-account');
   }
 
-  changePassword(value: { currentPassword: string; newPassword: string }): Observable<AuthResult<BackendAccount, string>> {
-    return this.httpClient.post<AuthResult<BackendAccount, string>>(`${this.basePath}/password`, value);
+  changePassword(value: { currentPassword: string; newPassword: string }): Observable<AuthResult<BackendAccount>> {
+    return this.httpClient.post<AuthResult<BackendAccount>>(`${this.basePath}/password`, value);
   }
 }

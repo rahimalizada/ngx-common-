@@ -1,10 +1,5 @@
-import { WithCredentials } from '../account/with-credentials.model';
+import { AbstractAccount } from './../account/abstract-account.model';
 
-export interface BackendAccount extends WithCredentials<string> {
-  id: string;
-  firstName: string;
-  lastName: string;
+export interface BackendAccount extends AbstractAccount<unknown> {
   passwordHash: string;
-  roles: string[];
-  permissions: string[];
 }
