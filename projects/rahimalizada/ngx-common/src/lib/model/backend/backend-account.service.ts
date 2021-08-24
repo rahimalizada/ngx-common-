@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AbstractRestService } from '../../rest/abstract-rest.service';
-import { AuthResult } from '../auth/auth-result.model';
+import { AuthResult } from '../account/auth-result.model';
 import { BackendAccount } from './backend-account.model';
 
 @Injectable({

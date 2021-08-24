@@ -34,7 +34,7 @@ export * from './lib/model/account/tos-status.enum';
 export * from './lib/model/account/with-permissions.model';
 export * from './lib/model/address/address.model';
 export * from './lib/model/address/country.enum';
-export * from './lib/model/auth/auth-result.model';
+export * from './lib/model/account/auth-result.model';
 export * from './lib/model/auth/login-request.model';
 export * from './lib/model/auth/password-change-request.model';
 export * from './lib/model/auth/register-request.model';
