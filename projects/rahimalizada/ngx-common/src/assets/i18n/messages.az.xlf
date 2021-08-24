@@ -56,6 +56,42 @@
         <target>Qadın</target>
       </segment>
     </unit>
+    <unit id="TOS_STATUS_ACCEPTED_TITLE">
+      <notes>
+        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:14</note>
+      </notes>
+      <segment state="translated">
+        <source>ACCEPTED</source>
+        <target>Qəbul olunub</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_ACCEPTED_DESCRIPTION">
+      <notes>
+        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:15</note>
+      </notes>
+      <segment state="translated">
+        <source>ACCEPTED</source>
+        <target>İstifadəçi qaydaları ilə taniş olub və qəbul edib</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_UPDATED_TITLE">
+      <notes>
+        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:22</note>
+      </notes>
+      <segment state="translated">
+        <source>UPDATED</source>
+        <target>Təzələnib</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_UPDATED_DESCRIPTION">
+      <notes>
+        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:23</note>
+      </notes>
+      <segment state="translated">
+        <source>UPDATED</source>
+        <target>İstifadəçi qaydaları təzələnib və istifadəçi qaydaları qəbul etməsini təsdiq etməyib</target>
+      </segment>
+    </unit>
     <unit id="ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">
       <notes>
         <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>

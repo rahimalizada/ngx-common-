@@ -51,7 +51,7 @@
     "build": "ng build --configuration=production && npm run xi18n",
     "test": "ng test",
     "lint": "ng lint",
-    "xi18n": "localize-extract -r . -s \"./dist/rahimalizada/ngx-common/fesm2015/*.js\" -f xlf2 -o ./i18n/messages.xlf2"
+    "xi18n": "localize-extract -r . -s \"./dist/rahimalizada/ngx-common/fesm2015/*.js\" -f xlf2 -o ./projects/rahimalizada/ngx-common/src/assets/i18n/messages.xlf2"
   },
   "private": true,
   "dependencies": {
