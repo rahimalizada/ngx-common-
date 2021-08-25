@@ -1,5 +1,6 @@
 import { HttpFile } from '../httpstorage/http-file.model';
 import { WithID } from '../with-id.model';
+import { AccountRole } from './account-role.model';
 import { AccountStatus } from './account-status.enum';
 import { AccountType } from './account-type.enum';
 import { Credentials } from './credentials.model';
@@ -7,7 +8,7 @@ import { Gender } from './gender.enum';
 import { TOSStatus } from './tos-status.enum';
 import { WithPermissions } from './with-permissions.model';
 
-export interface AbstractAccount<T> extends WithID<string>, WithPermissions {
+export interface AbstractAccount<T extends AccountRole> extends WithID<string>, WithPermissions {
   id: string;
   email: string;
   accountStatus: AccountStatus;
