@@ -42,8 +42,6 @@ export * from './lib/model/auth/register-request.model';
 export * from './lib/model/auth/renew-token-request.model';
 export * from './lib/model/auth/reset-password-confirmation.model';
 export * from './lib/model/auth/reset-password-request.model';
-export * from './lib/model/backend/backend-account.model';
-export * from './lib/model/backend/backend-account.service';
 export * from './lib/model/batch-update-request.model';
 export * from './lib/model/contact-request/contact-request.model';
 export * from './lib/model/httpstorage/http-file.model';
