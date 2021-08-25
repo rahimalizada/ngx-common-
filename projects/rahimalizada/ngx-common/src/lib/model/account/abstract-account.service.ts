@@ -2,10 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AbstractRestService } from '../../rest/abstract-rest.service';
 import { AbstractAccount } from './abstract-account.model';
-import { AccountRole } from './account-role.model';
 import { AuthResult } from './auth-result.model';
 
-export class AbstractAccountService<T extends AbstractAccount<AccountRole>> extends AbstractRestService<T> {
+export class AbstractAccountService<T extends AbstractAccount<U>, U> extends AbstractRestService<T> {
   constructor(httpClient: HttpClient, basePath: string) {
     super(httpClient, basePath);
   }
