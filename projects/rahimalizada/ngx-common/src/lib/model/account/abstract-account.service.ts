@@ -9,8 +9,8 @@ import { AuthResult } from './auth-result.model';
   providedIn: 'root',
 })
 export class AbstractAccountService<T extends AbstractAccount<T>> extends AbstractRestService<T> {
-  constructor(httpClient: HttpClient) {
-    super(httpClient, '/api/backend-account');
+  constructor(httpClient: HttpClient, basePath: string) {
+    super(httpClient, basePath);
   }
 
   changePassword(value: { currentPassword: string; newPassword: string }): Observable<AuthResult<T>> {
