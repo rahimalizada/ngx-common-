@@ -9,7 +9,7 @@ import { AuthResult } from './auth-result.model';
 @Injectable({
   providedIn: 'root',
 })
-export class AbstractAccountService<T extends AbstractAccount<U>, U extends AccountRole> extends AbstractRestService<T> {
+export class AbstractAccountService<T extends AbstractAccount<AccountRole>> extends AbstractRestService<T> {
   constructor(httpClient: HttpClient, basePath: string) {
     super(httpClient, basePath);
   }
