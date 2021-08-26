@@ -46,6 +46,7 @@ export * from './lib/model/batch-update-request.model';
 export * from './lib/model/contact-request/contact-request.model';
 export * from './lib/model/httpstorage/http-file.model';
 export * from './lib/model/mongodb/object-id.model';
+export * from './lib/model/notification/notification-method.enum';
 export * from './lib/model/oplog/oplog.model';
 export * from './lib/model/pager/pager-path-provider.model';
 export * from './lib/model/pager/pager-request-filters-type.enum';

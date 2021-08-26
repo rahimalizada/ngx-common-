@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="2.0"
-  xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
   <file id="ngi18n" original="ng.template">
     <unit id="COUNTRY_TURKEY_TITLE">
       <notes>
@@ -62,7 +61,7 @@
       </notes>
       <segment state="translated">
         <source>USER</source>
-        <target>istifadəçi</target>
+        <target>İstifadəçi</target>
       </segment>
     </unit>
     <unit id="GENERIC_ACCOUNT_ROLE_USER_DESCRIPTION">
@@ -71,7 +70,7 @@
       </notes>
       <segment state="translated">
         <source>USER</source>
-        <target>istifadəçi hesab rolu</target>
+        <target>İstifadəçi hesab rolu</target>
       </segment>
     </unit>
     <unit id="TOS_STATUS_ACCEPTED_TITLE">
@@ -234,6 +233,78 @@
       <segment state="translated">
         <source>PRO</source>
         <target>Peşəkar hesab növü</target>
+      </segment>
+    </unit>
+        <unit id="NOTIFICATION_METHOD_APP_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:16</note>
+      </notes>
+      <segment state="translated">
+        <source>APP</source>
+        <target>Tətbiq</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_APP_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:17</note>
+      </notes>
+      <segment state="translated">
+        <source>APP</source>
+        <target>Tətbiq/brauzer vasitəsilə göndərilən bildiriş</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_EMAIL_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:24</note>
+      </notes>
+      <segment state="translated">
+        <source>EMAIL</source>
+        <target>E-poçt</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_EMAIL_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:25</note>
+      </notes>
+      <segment state="translated">
+        <source>EMAIL</source>
+        <target>E-poçt vasitəsilə göndərilən bildiriş</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_SMS_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:32</note>
+      </notes>
+      <segment state="translated">
+        <source>SMS</source>
+        <target>SMS</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_SMS_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:33</note>
+      </notes>
+      <segment state="translated">
+        <source>SMS</source>
+        <target>SMS vasitəsilə göndərilən bildiriş</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_WHATSAPP_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:40</note>
+      </notes>
+      <segment state="translated">
+        <source>WHATSAPP</source>
+        <target>WhatsApp</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_WHATSAPP_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:41</note>
+      </notes>
+      <segment state="translated">
+        <source>WHATSAPP</source>
+        <target>WhatsApp vasitəsilə göndərilən bildiriş</target>
       </segment>
     </unit>
   </file>

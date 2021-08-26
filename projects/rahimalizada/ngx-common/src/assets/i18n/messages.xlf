@@ -209,5 +209,69 @@
         <source>AZERBAIJAN</source>
       </segment>
     </unit>
+    <unit id="NOTIFICATION_METHOD_APP_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:16</note>
+      </notes>
+      <segment>
+        <source>APP</source>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_APP_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:17</note>
+      </notes>
+      <segment>
+        <source>APP</source>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_EMAIL_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:24</note>
+      </notes>
+      <segment>
+        <source>EMAIL</source>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_EMAIL_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:25</note>
+      </notes>
+      <segment>
+        <source>EMAIL</source>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_SMS_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:32</note>
+      </notes>
+      <segment>
+        <source>SMS</source>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_SMS_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:33</note>
+      </notes>
+      <segment>
+        <source>SMS</source>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_WHATSAPP_TITLE">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:40</note>
+      </notes>
+      <segment>
+        <source>WHATSAPP</source>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_WHATSAPP_DESCRIPTION">
+      <notes>
+        <note category="location">../../lib/model/notification/notification-method.enum.ts:41</note>
+      </notes>
+      <segment>
+        <source>WHATSAPP</source>
+      </segment>
+    </unit>
   </file>
 </xliff>
