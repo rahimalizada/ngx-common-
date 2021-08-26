@@ -19,6 +19,7 @@ export interface AbstractAccount<T> extends WithID<string>, WithPermissions {
   credentials: Credentials;
   roles: T[];
   tosStatus: TOSStatus;
+  locale: string;
   profilePicture?: HttpFile;
   password?: string;
   created: Date;
