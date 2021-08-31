@@ -1,309 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
+<xliff version="2.0"
+  xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
   <file id="ngi18n" original="ng.template">
-    <unit id="COUNTRY_TURKEY_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:23,22</note>
-      </notes>
+    <unit id="ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">
       <segment state="translated">
-        <source>TURKEY</source>
+        <source>Pending verification</source>
+        <target>Yoxlanılmayıb</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_PENDING_VERIFICATION_DESCRIPTION">
+      <segment state="translated">
+        <source>Account will become active once checked by administation</source>
+        <target>Hesab administrasiya tərəfindən yoxlanıldıqdan sonra aktiv olacaq</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_PENDING_ACTIVATION_TITLE">
+      <segment state="translated">
+        <source>Pending activation</source>
+        <target>Deaktiv</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_PENDING_ACTIVATION_DESCRIPTION">
+      <segment state="translated">
+        <source>User has not submitted account activation code</source>
+        <target>İstifadəçi aktivasiya kodunu təsdiq etməyib</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_ACTIVE_TITLE">
+      <segment state="translated">
+        <source>Active</source>
+        <target>Aktiv</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_ACTIVE_DESCRIPTION">
+      <segment state="translated">
+        <source>Account is active</source>
+        <target>Hesab aktivdir</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_DISABLED_TITLE">
+      <segment state="translated">
+        <source>Disabled</source>
+        <target>Qapalı</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_STATUS_DISABLED_DESCRIPTION">
+      <segment state="translated">
+        <source>Account is disabled and cannot be used until enabled by administration</source>
+        <target>Hesab qapalıdır və yalnız administrasiya tərəfindən aktiv edildikdən sonra istifadə edilə bilər</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_NORMAL_TITLE">
+      <segment state="translated">
+        <source>Standard</source>
+        <target>Standart</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_NORMAL_DESCRIPTION">
+      <segment state="translated">
+        <source>Standard account type</source>
+        <target>Standart hesab</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_TRIAL_TITLE">
+      <segment state="translated">
+        <source>Trial</source>
+        <target>Sınaq</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_TRIAL_DESCRIPTION">
+      <segment state="translated">
+        <source>Trial account type</source>
+        <target>Sınaq müddətli hesab</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PRO_TITLE">
+      <segment state="translated">
+        <source>Pro</source>
+        <target>Peşəkar</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PRO_DESCRIPTION">
+      <segment state="translated">
+        <source>Pro account type</source>
+        <target>Peşəkar hesab növü</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PAID_TITLE">
+      <segment state="translated">
+        <source>Paid</source>
+        <target>Ödənişli</target>
+      </segment>
+    </unit>
+    <unit id="ACCOUNT_TYPE_PAID_DESCRIPTION">
+      <segment state="translated">
+        <source>Paid account type</source>
+        <target>Ödənişli hesab növü</target>
+      </segment>
+    </unit>
+    <unit id="GENDER_MALE_TITLE">
+      <segment state="translated">
+        <source>Male</source>
+        <target>Kişı</target>
+      </segment>
+    </unit>
+    <unit id="GENDER_FEMALE_TITLE">
+      <segment state="translated">
+        <source>Female</source>
+        <target>Qadın</target>
+      </segment>
+    </unit>
+    <unit id="GENERIC_ACCOUNT_ROLE_USER_TITLE">
+      <segment state="translated">
+        <source>User</source>
+        <target>İstifadəçi</target>
+      </segment>
+    </unit>
+    <unit id="GENERIC_ACCOUNT_ROLE_USER_DESCRIPTION">
+      <segment state="translated">
+        <source>User role</source>
+        <target>İstifadəçi hesab rolu</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_ACCEPTED_TITLE">
+      <segment state="translated">
+        <source>Accepted</source>
+        <target>Qəbul olunub</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_ACCEPTED_DESCRIPTION">
+      <segment state="translated">
+        <source>User has reviewed and accepted TOS</source>
+        <target>İstifadəçi qaydaları ilə taniş olub və qəbul edib</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_UPDATED_TITLE">
+      <segment state="translated">
+        <source>Updated</source>
+        <target>Təzələnib</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_UPDATED_DESCRIPTION">
+      <segment state="translated">
+        <source>TOS have been updated and user has not reviewd/accepted it yet</source>
+        <target>İstifadəçi qaydaları təzələnib və istifadəçi qaydaları qəbul etməsini təsdiq etməyib</target>
+      </segment>
+    </unit>
+    <unit id="COUNTRY_TURKEY_TITLE">
+      <segment state="translated">
+        <source>Turkey</source>
         <target>Türkiyə</target>
       </segment>
     </unit>
     <unit id="COUNTRY_USA_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:33</note>
-      </notes>
       <segment state="translated">
         <source>USA</source>
         <target>ABŞ</target>
       </segment>
     </unit>
     <unit id="COUNTRY_UKRAINE_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:38,37</note>
-      </notes>
       <segment state="translated">
-        <source>UKRAINE</source>
+        <source>Ukraine</source>
         <target>Ukrayna</target>
       </segment>
     </unit>
     <unit id="COUNTRY_AZERBAIJAN_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/address/country.enum.ts:49,48</note>
-      </notes>
       <segment state="translated">
-        <source>AZERBAIJAN</source>
+        <source>Azerbaijan</source>
         <target>Azərbaycan</target>
       </segment>
     </unit>
-    <unit id="GENDER_MALE_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/gender.enum.ts:49,48</note>
-      </notes>
+    <unit id="BALANCE_OP_TRANSACTION_TYPE_CASH_TITLE">
       <segment state="translated">
-        <source>MALE</source>
-        <target>Kişı</target>
+        <source>Cash</source>
+        <target>Nağd</target>
       </segment>
     </unit>
-    <unit id="GENDER_FEMALE_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/gender.enum.ts:49,48</note>
-      </notes>
+    <unit id="BALANCE_OP_TRANSACTION_TYPE_CASH_DESCRIPTION">
       <segment state="translated">
-        <source>FEMALE</source>
-        <target>Qadın</target>
+        <source>Cash based transaction</source>
+        <target>Nağd vəsait əməliyyatı</target>
       </segment>
     </unit>
-    <unit id="GENERIC_ACCOUNT_ROLE_USER_TITLE">
-      <notes>
-        <note category="location">../../lib/model/account/generic-account-role.enum.ts:13</note>
-      </notes>
+    <unit id="BALANCE_OP_TRANSACTION_TYPE_CREDIT_CARD_TITLE">
       <segment state="translated">
-        <source>USER</source>
-        <target>İstifadəçi</target>
+        <source>Credit card</source>
+        <target>Bank kartı</target>
       </segment>
     </unit>
-    <unit id="GENERIC_ACCOUNT_ROLE_USER_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/account/generic-account-role.enum.ts:14</note>
-      </notes>
+    <unit id="BALANCE_OP_TRANSACTION_TYPE_CREDIT_CARD_DESCRIPTION">
       <segment state="translated">
-        <source>USER</source>
-        <target>İstifadəçi hesab rolu</target>
+        <source>Credit card based transaction</source>
+        <target>Bank kartı ilə əməliyyat</target>
       </segment>
     </unit>
-    <unit id="TOS_STATUS_ACCEPTED_TITLE">
-      <notes>
-        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:14</note>
-      </notes>
+    <unit id="BALANCE_OP_TRANSACTION_TYPE_BANK_ACCOUNT_TITLE">
       <segment state="translated">
-        <source>ACCEPTED</source>
-        <target>Qəbul olunub</target>
+        <source>Bank account</source>
+        <target>Bank account</target>
       </segment>
     </unit>
-    <unit id="TOS_STATUS_ACCEPTED_DESCRIPTION">
-      <notes>
-        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:15</note>
-      </notes>
+    <unit id="BALANCE_OP_TRANSACTION_TYPE_BANK_ACCOUNT_DESCRIPTION">
       <segment state="translated">
-        <source>ACCEPTED</source>
-        <target>İstifadəçi qaydaları ilə taniş olub və qəbul edib</target>
+        <source>Bank account based transaction</source>
+        <target>Bank hesabı ilə əməliyyat</target>
       </segment>
     </unit>
-    <unit id="TOS_STATUS_UPDATED_TITLE">
-      <notes>
-        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:22</note>
-      </notes>
+    <unit id="BALANCE_OP_TYPE_DEPOSIT_TITLE">
       <segment state="translated">
-        <source>UPDATED</source>
-        <target>Təzələnib</target>
+        <source>Deposit</source>
+        <target>Depozit</target>
       </segment>
     </unit>
-    <unit id="TOS_STATUS_UPDATED_DESCRIPTION">
-      <notes>
-        <note category="location">../projects/rahimalizada/ngx-common/src/lib/model/account/tos-status.enum.ts:23</note>
-      </notes>
+    <unit id="BALANCE_OP_TYPE_EXPENSE_TITLE">
       <segment state="translated">
-        <source>UPDATED</source>
-        <target>İstifadəçi qaydaları təzələnib və istifadəçi qaydaları qəbul etməsini təsdiq etməyib</target>
+        <source>Product/Service payment</source>
+        <target>Mal/Xidmət ödənişi</target>
       </segment>
     </unit>
-    <unit id="ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
+    <unit id="BALANCE_OP_TYPE_WITHDRAWAL_TITLE">
       <segment state="translated">
-        <source>PENDING_VERIFICATION</source>
-        <target>Yoxlanılmayıb</target>
+        <source>Withdrawal</source>
+        <target>Çıxarılma</target>
       </segment>
     </unit>
-    <unit id="ACCOUNT_STATUS_PENDING_VERIFICATION_DESCRIPTION">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
+    <unit id="NOTIFICATION_METHOD_APP_TITLE">
       <segment state="translated">
-        <source>PENDING_VERIFICATION</source>
-        <target>İstifadəçi aktivasiya kodunu təsdiq edib lakin administrasiya tərəfindən yoxlanıldıqdan sonra istifadə edilə bilər</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_STATUS_PENDING_ACTIVATION_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
-      <segment state="translated">
-        <source>PENDING_ACTIVATION</source>
-        <target>Deaktiv</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_STATUS_PENDING_ACTIVATION_DESCRIPTION">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
-      <segment state="translated">
-        <source>PENDING_ACTIVATION</source>
-        <target>İstifadəçi aktivasiya kodunu təsdiq etməyib</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_STATUS_ACTIVE_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
-      <segment state="translated">
-        <source>ACTIVE</source>
-        <target>Aktiv</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_STATUS_ACTIVE_DESCRIPTION">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
-      <segment state="translated">
-        <source>ACTIVE</source>
-        <target>Hesab aktivdir</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_STATUS_DISABLED_TITLE">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
-      <segment state="translated">
-        <source>DISABLED</source>
-        <target>Qapalı</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_STATUS_DISABLED_DESCRIPTION">
-      <notes>
-        <note category="location">projects/rahimalizada/ngx-common/src/lib/model/account/account-status.enum.ts:49,48</note>
-      </notes>
-      <segment state="translated">
-        <source>DISABLED</source>
-        <target>Hesab qapalıdır və yalnız administrasiya tərəfindən aktiv edildikdən sonra istifadə edilə bilər</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_TYPE_NORMAL_TITLE">
-      <notes>
-        <note category="location">../../lib/model/account/account-type.enum.ts:15</note>
-      </notes>
-      <segment state="translated">
-        <source>NORMAL</source>
-        <target>Normal</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_TYPE_NORMAL_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/account/account-type.enum.ts:16</note>
-      </notes>
-      <segment state="translated">
-        <source>NORMAL</source>
-        <target>Normal hesab</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_TYPE_TRIAL_TITLE">
-      <notes>
-        <note category="location">../../lib/model/account/account-type.enum.ts:23</note>
-      </notes>
-      <segment state="translated">
-        <source>TRIAL</source>
-        <target>Sınaq</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_TYPE_TRIAL_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/account/account-type.enum.ts:24</note>
-      </notes>
-      <segment state="translated">
-        <source>TRIAL</source>
-        <target>Sınaq müddətli hesab</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_TYPE_PRO_TITLE">
-      <notes>
-        <note category="location">../../lib/model/account/account-type.enum.ts:30</note>
-      </notes>
-      <segment state="translated">
-        <source>PRO</source>
-        <target>Peşəkar</target>
-      </segment>
-    </unit>
-    <unit id="ACCOUNT_TYPE_PRO_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/account/account-type.enum.ts:30</note>
-      </notes>
-      <segment state="translated">
-        <source>PRO</source>
-        <target>Peşəkar hesab növü</target>
-      </segment>
-    </unit>
-        <unit id="NOTIFICATION_METHOD_APP_TITLE">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:16</note>
-      </notes>
-      <segment state="translated">
-        <source>APP</source>
+        <source>App</source>
         <target>Tətbiq</target>
       </segment>
     </unit>
     <unit id="NOTIFICATION_METHOD_APP_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:17</note>
-      </notes>
       <segment state="translated">
-        <source>APP</source>
+        <source>In-app/browser notification</source>
         <target>Tətbiq/brauzer vasitəsilə göndərilən bildiriş</target>
       </segment>
     </unit>
     <unit id="NOTIFICATION_METHOD_EMAIL_TITLE">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:24</note>
-      </notes>
       <segment state="translated">
-        <source>EMAIL</source>
+        <source>Email</source>
         <target>E-poçt</target>
       </segment>
     </unit>
     <unit id="NOTIFICATION_METHOD_EMAIL_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:25</note>
-      </notes>
       <segment state="translated">
-        <source>EMAIL</source>
+        <source>Email notification</source>
         <target>E-poçt vasitəsilə göndərilən bildiriş</target>
       </segment>
     </unit>
     <unit id="NOTIFICATION_METHOD_SMS_TITLE">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:32</note>
-      </notes>
       <segment state="translated">
         <source>SMS</source>
         <target>SMS</target>
       </segment>
     </unit>
     <unit id="NOTIFICATION_METHOD_SMS_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:33</note>
-      </notes>
       <segment state="translated">
-        <source>SMS</source>
+        <source>SMS notification</source>
         <target>SMS vasitəsilə göndərilən bildiriş</target>
       </segment>
     </unit>
     <unit id="NOTIFICATION_METHOD_WHATSAPP_TITLE">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:40</note>
-      </notes>
       <segment state="translated">
-        <source>WHATSAPP</source>
+        <source>WhatsApp</source>
         <target>WhatsApp</target>
       </segment>
     </unit>
     <unit id="NOTIFICATION_METHOD_WHATSAPP_DESCRIPTION">
-      <notes>
-        <note category="location">../../lib/model/notification/notification-method.enum.ts:41</note>
-      </notes>
       <segment state="translated">
-        <source>WHATSAPP</source>
+        <source>WhatsApp notification</source>
         <target>WhatsApp vasitəsilə göndərilən bildiriş</target>
       </segment>
     </unit>

@@ -7,29 +7,29 @@ export enum Country {
 
 export class CountrySpec {
   constructor(
+    public cssClass: string,
     public title: string,
     public numericCode: string,
     public currency: string,
     public currencySymbol: string,
-    public cssClass: string,
   ) {}
 }
 
 export const CountryData = new Map<Country, CountrySpec>([
-  [Country.TURKEY, new CountrySpec($localize`:@@COUNTRY_TURKEY_TITLE:TURKEY`, '792', 'TRY', '₺', 'country-turkey')],
-  [Country.USA, new CountrySpec($localize`:@@COUNTRY_USA_TITLE:USA`, '840', 'USD', '$', 'country-usa')],
-  [Country.UKRAINE, new CountrySpec($localize`:@@COUNTRY_UKRAINE_TITLE:UKRAINE`, '804', 'UAH', '₴', 'country-ukraine')],
-  [Country.AZERBAIJAN, new CountrySpec($localize`:@@COUNTRY_AZERBAIJAN_TITLE:AZERBAIJAN`, '031', 'AZN', '₼', 'country-azerbaijan')],
+  [Country.TURKEY, new CountrySpec('country-turkey', $localize`:@@COUNTRY_TURKEY_TITLE:Turkey`, '792', 'TRY', '₺')],
+  [Country.USA, new CountrySpec('country-usa', $localize`:@@COUNTRY_USA_TITLE:USA`, '840', 'USD', '$')],
+  [Country.UKRAINE, new CountrySpec('country-ukraine', $localize`:@@COUNTRY_UKRAINE_TITLE:Ukraine`, '804', 'UAH', '₴')],
+  [Country.AZERBAIJAN, new CountrySpec('country-azerbaijan', $localize`:@@COUNTRY_AZERBAIJAN_TITLE:Azerbaijan`, '031', 'AZN', '₼')],
 ]);
 
 export class CountryListSpec {
   constructor(
     public country: Country,
+    public cssClass: string,
     public title: string,
     public numericCode: string,
     public currency: string,
     public currencySymbol: string,
-    public cssClass: string,
   ) {}
 }
 
@@ -79,4 +79,36 @@ export const CountryList: CountryListSpec[] = [...CountryData.entries()].map((en
 			{{option.value.title}} ({{option.key}})</mat-option>
   </mat-select>
  </mat-form-field>
+*/
+
+/* XLIFF TRANSLATION FOR LANGUAGE: AZ
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
+  <file id="ngi18n" original="ng.template">
+    <unit id="COUNTRY_TURKEY_TITLE">
+      <segment state="translated">
+        <source>Turkey</source>
+        <target>Türkiyə</target>
+      </segment>
+    </unit>
+    <unit id="COUNTRY_USA_TITLE">
+      <segment state="translated">
+        <source>USA</source>
+        <target>ABŞ</target>
+      </segment>
+    </unit>
+    <unit id="COUNTRY_UKRAINE_TITLE">
+      <segment state="translated">
+        <source>Ukraine</source>
+        <target>Ukrayna</target>
+      </segment>
+    </unit>
+    <unit id="COUNTRY_AZERBAIJAN_TITLE">
+      <segment state="translated">
+        <source>Azerbaijan</source>
+        <target>Azərbaycan</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
 */

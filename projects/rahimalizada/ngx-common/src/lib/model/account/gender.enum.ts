@@ -4,16 +4,16 @@ export enum Gender {
 }
 
 export class GenderSpec {
-  constructor(public title: string, public cssClass: string) {}
+  constructor(public cssClass: string, public title: string) {}
 }
 
 export const GenderData = new Map<Gender, GenderSpec>([
-  [Gender.MALE, new GenderSpec($localize`:@@GENDER_MALE_TITLE:MALE`, 'gender-male')],
-  [Gender.FEMALE, new GenderSpec($localize`:@@GENDER_FEMALE_TITLE:FEMALE`, 'gender-female')],
+  [Gender.MALE, new GenderSpec('gender-male', $localize`:@@GENDER_MALE_TITLE:Male`)],
+  [Gender.FEMALE, new GenderSpec('gender-female', $localize`:@@GENDER_FEMALE_TITLE:Female`)],
 ]);
 
 export class GenderListSpec {
-  constructor(public gender: Gender, public title: string, public cssClass: string) {}
+  constructor(public gender: Gender, public cssClass: string, public title: string) {}
 }
 
 export const GenderList: GenderListSpec[] = [...GenderData.entries()].map((entry) => ({ gender: entry[0], ...entry[1] }));
@@ -56,4 +56,24 @@ export const GenderList: GenderListSpec[] = [...GenderData.entries()].map((entry
 			{{option.value.title}} ({{option.key}})</mat-option>
   </mat-select>
  </mat-form-field>
+*/
+
+/* XLIFF TRANSLATION FOR LANGUAGE: AZ
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
+  <file id="ngi18n" original="ng.template">
+    <unit id="GENDER_MALE_TITLE">
+      <segment state="translated">
+        <source>Male</source>
+        <target>Kişı</target>
+      </segment>
+    </unit>
+    <unit id="GENDER_FEMALE_TITLE">
+      <segment state="translated">
+        <source>Female</source>
+        <target>Qadın</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
 */

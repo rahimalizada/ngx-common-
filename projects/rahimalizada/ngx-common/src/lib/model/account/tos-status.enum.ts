@@ -4,30 +4,30 @@ export enum TOSStatus {
 }
 
 export class TOSStatusSpec {
-  constructor(public title: string, public description: string, public cssClass: string) {}
+  constructor(public cssClass: string, public title: string, public description: string) {}
 }
 
 export const TOSStatusData = new Map<TOSStatus, TOSStatusSpec>([
   [
     TOSStatus.ACCEPTED,
     new TOSStatusSpec(
-      $localize`:@@TOS_STATUS_ACCEPTED_TITLE:ACCEPTED`,
-      $localize`:@@TOS_STATUS_ACCEPTED_DESCRIPTION:ACCEPTED`,
       'tos-status-accepted',
+      $localize`:@@TOS_STATUS_ACCEPTED_TITLE:Accepted`,
+      $localize`:@@TOS_STATUS_ACCEPTED_DESCRIPTION:User has reviewed and accepted TOS`,
     ),
   ],
   [
     TOSStatus.UPDATED,
     new TOSStatusSpec(
-      $localize`:@@TOS_STATUS_UPDATED_TITLE:UPDATED`,
-      $localize`:@@TOS_STATUS_UPDATED_DESCRIPTION:UPDATED`,
       'tos-status-updated',
+      $localize`:@@TOS_STATUS_UPDATED_TITLE:Updated`,
+      $localize`:@@TOS_STATUS_UPDATED_DESCRIPTION:TOS have been updated and user has not reviewd/accepted it yet`,
     ),
   ],
 ]);
 
 export class TOSStatusListSpec {
-  constructor(public tOSStatus: TOSStatus, public title: string, public description: string, public cssClass: string) {}
+  constructor(public tOSStatus: TOSStatus, public cssClass: string, public title: string, public description: string) {}
 }
 
 export const TOSStatusList: TOSStatusListSpec[] = [...TOSStatusData.entries()].map((entry) => ({ tOSStatus: entry[0], ...entry[1] }));
@@ -70,4 +70,36 @@ export const TOSStatusList: TOSStatusListSpec[] = [...TOSStatusData.entries()].m
 			{{option.value.title}} ({{option.key}})</mat-option>
   </mat-select>
  </mat-form-field>
+*/
+
+/* XLIFF TRANSLATION FOR LANGUAGE: AZ
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
+  <file id="ngi18n" original="ng.template">
+    <unit id="TOS_STATUS_ACCEPTED_TITLE">
+      <segment state="translated">
+        <source>Accepted</source>
+        <target>Qəbul olunub</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_ACCEPTED_DESCRIPTION">
+      <segment state="translated">
+        <source>User has reviewed and accepted TOS</source>
+        <target>İstifadəçi qaydaları ilə taniş olub və qəbul edib</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_UPDATED_TITLE">
+      <segment state="translated">
+        <source>Updated</source>
+        <target>Təzələnib</target>
+      </segment>
+    </unit>
+    <unit id="TOS_STATUS_UPDATED_DESCRIPTION">
+      <segment state="translated">
+        <source>TOS have been updated and user has not reviewd/accepted it yet</source>
+        <target>İstifadəçi qaydaları təzələnib və istifadəçi qaydaları qəbul etməsini təsdiq etməyib</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
 */

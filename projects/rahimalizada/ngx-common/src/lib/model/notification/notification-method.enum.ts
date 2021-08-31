@@ -6,46 +6,46 @@ export enum NotificationMethod {
 }
 
 export class NotificationMethodSpec {
-  constructor(public title: string, public description: string, public cssClass: string) {}
+  constructor(public cssClass: string, public title: string, public description: string) {}
 }
 
 export const NotificationMethodData = new Map<NotificationMethod, NotificationMethodSpec>([
   [
     NotificationMethod.APP,
     new NotificationMethodSpec(
-      $localize`:@@NOTIFICATION_METHOD_APP_TITLE:APP`,
-      $localize`:@@NOTIFICATION_METHOD_APP_DESCRIPTION:APP`,
       'notification-method-app',
+      $localize`:@@NOTIFICATION_METHOD_APP_TITLE:App`,
+      $localize`:@@NOTIFICATION_METHOD_APP_DESCRIPTION:In-app/browser notification`,
     ),
   ],
   [
     NotificationMethod.EMAIL,
     new NotificationMethodSpec(
-      $localize`:@@NOTIFICATION_METHOD_EMAIL_TITLE:EMAIL`,
-      $localize`:@@NOTIFICATION_METHOD_EMAIL_DESCRIPTION:EMAIL`,
       'notification-method-email',
+      $localize`:@@NOTIFICATION_METHOD_EMAIL_TITLE:Email`,
+      $localize`:@@NOTIFICATION_METHOD_EMAIL_DESCRIPTION:Email notification`,
     ),
   ],
   [
     NotificationMethod.SMS,
     new NotificationMethodSpec(
-      $localize`:@@NOTIFICATION_METHOD_SMS_TITLE:SMS`,
-      $localize`:@@NOTIFICATION_METHOD_SMS_DESCRIPTION:SMS`,
       'notification-method-sms',
+      $localize`:@@NOTIFICATION_METHOD_SMS_TITLE:SMS`,
+      $localize`:@@NOTIFICATION_METHOD_SMS_DESCRIPTION:SMS notification`,
     ),
   ],
   [
     NotificationMethod.WHATSAPP,
     new NotificationMethodSpec(
-      $localize`:@@NOTIFICATION_METHOD_WHATSAPP_TITLE:WHATSAPP`,
-      $localize`:@@NOTIFICATION_METHOD_WHATSAPP_DESCRIPTION:WHATSAPP`,
       'notification-method-whatsapp',
+      $localize`:@@NOTIFICATION_METHOD_WHATSAPP_TITLE:WhatsApp`,
+      $localize`:@@NOTIFICATION_METHOD_WHATSAPP_DESCRIPTION:WhatsApp notification`,
     ),
   ],
 ]);
 
 export class NotificationMethodListSpec {
-  constructor(public notificationMethod: NotificationMethod, public title: string, public description: string, public cssClass: string) {}
+  constructor(public notificationMethod: NotificationMethod, public cssClass: string, public title: string, public description: string) {}
 }
 
 export const NotificationMethodList: NotificationMethodListSpec[] = [...NotificationMethodData.entries()].map((entry) => ({
@@ -97,4 +97,60 @@ export const NotificationMethodList: NotificationMethodListSpec[] = [...Notifica
 			{{option.value.title}} ({{option.key}})</mat-option>
   </mat-select>
  </mat-form-field>
+*/
+
+/* XLIFF TRANSLATION FOR LANGUAGE: AZ
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
+  <file id="ngi18n" original="ng.template">
+    <unit id="NOTIFICATION_METHOD_APP_TITLE">
+      <segment state="translated">
+        <source>App</source>
+        <target>Tətbiq</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_APP_DESCRIPTION">
+      <segment state="translated">
+        <source>In-app/browser notification</source>
+        <target>Tətbiq/brauzer vasitəsilə göndərilən bildiriş</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_EMAIL_TITLE">
+      <segment state="translated">
+        <source>Email</source>
+        <target>E-poçt</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_EMAIL_DESCRIPTION">
+      <segment state="translated">
+        <source>Email notification</source>
+        <target>E-poçt vasitəsilə göndərilən bildiriş</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_SMS_TITLE">
+      <segment state="translated">
+        <source>SMS</source>
+        <target>SMS</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_SMS_DESCRIPTION">
+      <segment state="translated">
+        <source>SMS notification</source>
+        <target>SMS vasitəsilə göndərilən bildiriş</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_WHATSAPP_TITLE">
+      <segment state="translated">
+        <source>WhatsApp</source>
+        <target>WhatsApp</target>
+      </segment>
+    </unit>
+    <unit id="NOTIFICATION_METHOD_WHATSAPP_DESCRIPTION">
+      <segment state="translated">
+        <source>WhatsApp notification</source>
+        <target>WhatsApp vasitəsilə göndərilən bildiriş</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
 */
