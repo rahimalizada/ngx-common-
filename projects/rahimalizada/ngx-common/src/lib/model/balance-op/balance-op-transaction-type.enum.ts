@@ -51,9 +51,9 @@ export const BalanceOpTransactionTypeList: BalanceOpTransactionTypeListSpec[] = 
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpTransactionType" placeholder="BalanceOpTransactionType" formControlName="balanceOpTransactionType">
-    <mat-option value="CASH">Cash</mat-option>
-    <mat-option value="CREDIT_CARD">Credit card</mat-option>
-    <mat-option value="BANK_ACCOUNT">Bank account</mat-option>
+    <mat-option value="CASH">CASH</mat-option>
+    <mat-option value="CREDIT_CARD">CREDIT_CARD</mat-option>
+    <mat-option value="BANK_ACCOUNT">BANK_ACCOUNT</mat-option>
   </mat-select>
  </mat-form-field>
 */

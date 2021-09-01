@@ -38,10 +38,10 @@ export const CountryList: CountryListSpec[] = [...CountryData.entries()].map((en
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="country" placeholder="Country" formControlName="country">
-    <mat-option value="TURKEY">Turkey</mat-option>
+    <mat-option value="TURKEY">TURKEY</mat-option>
     <mat-option value="USA">USA</mat-option>
-    <mat-option value="UKRAINE">Ukraine</mat-option>
-    <mat-option value="AZERBAIJAN">Azerbaijan</mat-option>
+    <mat-option value="UKRAINE">UKRAINE</mat-option>
+    <mat-option value="AZERBAIJAN">AZERBAIJAN</mat-option>
   </mat-select>
  </mat-form-field>
 */

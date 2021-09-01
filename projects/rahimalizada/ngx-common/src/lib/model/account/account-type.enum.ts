@@ -56,10 +56,10 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountType" placeholder="AccountType" formControlName="accountType">
-    <mat-option value="STANDARD">Standard</mat-option>
-    <mat-option value="TRIAL">Trial</mat-option>
-    <mat-option value="PRO">Pro</mat-option>
-    <mat-option value="PAID">Paid</mat-option>
+    <mat-option value="STANDARD">STANDARD</mat-option>
+    <mat-option value="TRIAL">TRIAL</mat-option>
+    <mat-option value="PRO">PRO</mat-option>
+    <mat-option value="PAID">PAID</mat-option>
   </mat-select>
  </mat-form-field>
 */

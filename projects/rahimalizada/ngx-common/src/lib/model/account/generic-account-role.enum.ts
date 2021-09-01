@@ -36,7 +36,7 @@ export const GenericAccountRoleList: GenericAccountRoleListSpec[] = [...GenericA
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="genericAccountRole" placeholder="GenericAccountRole" formControlName="genericAccountRole">
-    <mat-option value="USER">User</mat-option>
+    <mat-option value="USER">USER</mat-option>
   </mat-select>
  </mat-form-field>
 */

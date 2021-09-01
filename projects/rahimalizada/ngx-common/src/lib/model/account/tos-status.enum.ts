@@ -35,8 +35,8 @@ export const TOSStatusList: TOSStatusListSpec[] = [...TOSStatusData.entries()].m
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="tOSStatus" placeholder="TOSStatus" formControlName="tOSStatus">
-    <mat-option value="ACCEPTED">Accepted</mat-option>
-    <mat-option value="UPDATED">Updated</mat-option>
+    <mat-option value="ACCEPTED">ACCEPTED</mat-option>
+    <mat-option value="UPDATED">UPDATED</mat-option>
   </mat-select>
  </mat-form-field>
 */

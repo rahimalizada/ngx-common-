@@ -56,10 +56,10 @@ export const AccountStatusList: AccountStatusListSpec[] = [...AccountStatusData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountStatus" placeholder="AccountStatus" formControlName="accountStatus">
-    <mat-option value="PENDING_VERIFICATION">Pending verification</mat-option>
-    <mat-option value="PENDING_ACTIVATION">Pending activation</mat-option>
-    <mat-option value="ACTIVE">Active</mat-option>
-    <mat-option value="DISABLED">Disabled</mat-option>
+    <mat-option value="PENDING_VERIFICATION">PENDING_VERIFICATION</mat-option>
+    <mat-option value="PENDING_ACTIVATION">PENDING_ACTIVATION</mat-option>
+    <mat-option value="ACTIVE">ACTIVE</mat-option>
+    <mat-option value="DISABLED">DISABLED</mat-option>
   </mat-select>
  </mat-form-field>
 */

@@ -21,8 +21,8 @@ export const GenderList: GenderListSpec[] = [...GenderData.entries()].map((entry
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="gender" placeholder="Gender" formControlName="gender">
-    <mat-option value="MALE">Male</mat-option>
-    <mat-option value="FEMALE">Female</mat-option>
+    <mat-option value="MALE">MALE</mat-option>
+    <mat-option value="FEMALE">FEMALE</mat-option>
   </mat-select>
  </mat-form-field>
 */

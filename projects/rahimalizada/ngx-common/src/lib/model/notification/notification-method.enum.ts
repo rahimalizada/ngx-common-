@@ -56,10 +56,10 @@ export const NotificationMethodList: NotificationMethodListSpec[] = [...Notifica
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="notificationMethod" placeholder="NotificationMethod" formControlName="notificationMethod">
-    <mat-option value="APP">App</mat-option>
-    <mat-option value="EMAIL">Email</mat-option>
+    <mat-option value="APP">APP</mat-option>
+    <mat-option value="EMAIL">EMAIL</mat-option>
     <mat-option value="SMS">SMS</mat-option>
-    <mat-option value="WHATSAPP">WhatsApp</mat-option>
+    <mat-option value="WHATSAPP">WHATSAPP</mat-option>
   </mat-select>
  </mat-form-field>
 */

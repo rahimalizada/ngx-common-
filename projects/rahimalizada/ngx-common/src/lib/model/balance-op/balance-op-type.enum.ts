@@ -46,9 +46,9 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpType" placeholder="BalanceOpType" formControlName="balanceOpType">
-    <mat-option value="DEPOSIT">Deposit</mat-option>
-    <mat-option value="EXPENSE">Product/Service payment</mat-option>
-    <mat-option value="WITHDRAWAL">Withdrawal</mat-option>
+    <mat-option value="DEPOSIT">DEPOSIT</mat-option>
+    <mat-option value="EXPENSE">EXPENSE</mat-option>
+    <mat-option value="WITHDRAWAL">WITHDRAWAL</mat-option>
   </mat-select>
  </mat-form-field>
 */
