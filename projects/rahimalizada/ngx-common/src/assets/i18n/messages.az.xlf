@@ -50,13 +50,13 @@
         <target>Hesab qapalıdır və yalnız administrasiya tərəfindən aktiv edildikdən sonra istifadə edilə bilər</target>
       </segment>
     </unit>
-    <unit id="ACCOUNT_TYPE_NORMAL_TITLE">
+    <unit id="ACCOUNT_TYPE_STANDARD_TITLE">
       <segment state="translated">
         <source>Standard</source>
         <target>Standart</target>
       </segment>
     </unit>
-    <unit id="ACCOUNT_TYPE_NORMAL_DESCRIPTION">
+    <unit id="ACCOUNT_TYPE_STANDARD_DESCRIPTION">
       <segment state="translated">
         <source>Standard account type</source>
         <target>Standart hesab</target>

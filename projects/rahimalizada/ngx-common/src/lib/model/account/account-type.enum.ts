@@ -1,5 +1,5 @@
 export enum AccountType {
-  NORMAL = 'NORMAL',
+  STANDARD = 'STANDARD',
   TRIAL = 'TRIAL',
   PRO = 'PRO',
   PAID = 'PAID',
@@ -11,11 +11,11 @@ export class AccountTypeSpec {
 
 export const AccountTypeData = new Map<AccountType, AccountTypeSpec>([
   [
-    AccountType.NORMAL,
+    AccountType.STANDARD,
     new AccountTypeSpec(
-      'account-type-normal',
-      $localize`:@@ACCOUNT_TYPE_NORMAL_TITLE:Standard`,
-      $localize`:@@ACCOUNT_TYPE_NORMAL_DESCRIPTION:Standard account type`,
+      'account-type-standard',
+      $localize`:@@ACCOUNT_TYPE_STANDARD_TITLE:Standard`,
+      $localize`:@@ACCOUNT_TYPE_STANDARD_DESCRIPTION:Standard account type`,
     ),
   ],
   [
@@ -56,7 +56,7 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountType" placeholder="AccountType" formControlName="accountType">
-    <mat-option value="NORMAL">NORMAL</mat-option>
+    <mat-option value="STANDARD">STANDARD</mat-option>
     <mat-option value="TRIAL">TRIAL</mat-option>
     <mat-option value="PRO">PRO</mat-option>
     <mat-option value="PAID">PAID</mat-option>
@@ -67,7 +67,7 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountType" placeholder="AccountType" formControlName="accountType">
-    <mat-option value="NORMAL"><ng-container i18n="@@ACCOUNT_TYPE_NORMAL_TITLE">NORMAL</ng-container></mat-option>
+    <mat-option value="STANDARD"><ng-container i18n="@@ACCOUNT_TYPE_STANDARD_TITLE">STANDARD</ng-container></mat-option>
     <mat-option value="TRIAL"><ng-container i18n="@@ACCOUNT_TYPE_TRIAL_TITLE">TRIAL</ng-container></mat-option>
     <mat-option value="PRO"><ng-container i18n="@@ACCOUNT_TYPE_PRO_TITLE">PRO</ng-container></mat-option>
     <mat-option value="PAID"><ng-container i18n="@@ACCOUNT_TYPE_PAID_TITLE">PAID</ng-container></mat-option>
@@ -78,7 +78,7 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountType" placeholder="AccountType" formControlName="accountType">
-    <mat-option value="NORMAL"><ng-container i18n="@@ACCOUNT_TYPE_NORMAL_TITLE">NORMAL</ng-container> (NORMAL)</mat-option>
+    <mat-option value="STANDARD"><ng-container i18n="@@ACCOUNT_TYPE_STANDARD_TITLE">STANDARD</ng-container> (STANDARD)</mat-option>
     <mat-option value="TRIAL"><ng-container i18n="@@ACCOUNT_TYPE_TRIAL_TITLE">TRIAL</ng-container> (TRIAL)</mat-option>
     <mat-option value="PRO"><ng-container i18n="@@ACCOUNT_TYPE_PRO_TITLE">PRO</ng-container> (PRO)</mat-option>
     <mat-option value="PAID"><ng-container i18n="@@ACCOUNT_TYPE_PAID_TITLE">PAID</ng-container> (PAID)</mat-option>
@@ -103,13 +103,13 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
   <file id="ngi18n" original="ng.template">
-    <unit id="ACCOUNT_TYPE_NORMAL_TITLE">
+    <unit id="ACCOUNT_TYPE_STANDARD_TITLE">
       <segment state="translated">
         <source>Standard</source>
         <target>Standart</target>
       </segment>
     </unit>
-    <unit id="ACCOUNT_TYPE_NORMAL_DESCRIPTION">
+    <unit id="ACCOUNT_TYPE_STANDARD_DESCRIPTION">
       <segment state="translated">
         <source>Standard account type</source>
         <target>Standart hesab</target>
