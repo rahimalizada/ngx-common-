@@ -35,8 +35,8 @@ export const TOSStatusList: TOSStatusListSpec[] = [...TOSStatusData.entries()].m
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="tOSStatus" placeholder="TOSStatus" formControlName="tOSStatus">
-    <mat-option value="ACCEPTED">ACCEPTED</mat-option>
-    <mat-option value="UPDATED">UPDATED</mat-option>
+    <mat-option value="ACCEPTED">Accepted</mat-option>
+    <mat-option value="UPDATED">Updated</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -44,8 +44,8 @@ export const TOSStatusList: TOSStatusListSpec[] = [...TOSStatusData.entries()].m
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="tOSStatus" placeholder="TOSStatus" formControlName="tOSStatus">
-    <mat-option value="ACCEPTED"><ng-container i18n="@@TOS_STATUS_ACCEPTED_TITLE">ACCEPTED</ng-container></mat-option>
-    <mat-option value="UPDATED"><ng-container i18n="@@TOS_STATUS_UPDATED_TITLE">UPDATED</ng-container></mat-option>
+    <mat-option value="ACCEPTED"><ng-container i18n="@@TOS_STATUS_ACCEPTED_TITLE">Accepted</ng-container></mat-option>
+    <mat-option value="UPDATED"><ng-container i18n="@@TOS_STATUS_UPDATED_TITLE">Updated</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -53,8 +53,8 @@ export const TOSStatusList: TOSStatusListSpec[] = [...TOSStatusData.entries()].m
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="tOSStatus" placeholder="TOSStatus" formControlName="tOSStatus">
-    <mat-option value="ACCEPTED"><ng-container i18n="@@TOS_STATUS_ACCEPTED_TITLE">ACCEPTED</ng-container> (ACCEPTED)</mat-option>
-    <mat-option value="UPDATED"><ng-container i18n="@@TOS_STATUS_UPDATED_TITLE">UPDATED</ng-container> (UPDATED)</mat-option>
+    <mat-option value="ACCEPTED"><ng-container i18n="@@TOS_STATUS_ACCEPTED_TITLE">Accepted</ng-container> (ACCEPTED)</mat-option>
+    <mat-option value="UPDATED"><ng-container i18n="@@TOS_STATUS_UPDATED_TITLE">Updated</ng-container> (UPDATED)</mat-option>
   </mat-select>
  </mat-form-field>
 */

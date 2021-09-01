@@ -56,10 +56,10 @@ export const AccountStatusList: AccountStatusListSpec[] = [...AccountStatusData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountStatus" placeholder="AccountStatus" formControlName="accountStatus">
-    <mat-option value="PENDING_VERIFICATION">PENDING_VERIFICATION</mat-option>
-    <mat-option value="PENDING_ACTIVATION">PENDING_ACTIVATION</mat-option>
-    <mat-option value="ACTIVE">ACTIVE</mat-option>
-    <mat-option value="DISABLED">DISABLED</mat-option>
+    <mat-option value="PENDING_VERIFICATION">Pending verification</mat-option>
+    <mat-option value="PENDING_ACTIVATION">Pending activation</mat-option>
+    <mat-option value="ACTIVE">Active</mat-option>
+    <mat-option value="DISABLED">Disabled</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -67,10 +67,10 @@ export const AccountStatusList: AccountStatusListSpec[] = [...AccountStatusData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountStatus" placeholder="AccountStatus" formControlName="accountStatus">
-    <mat-option value="PENDING_VERIFICATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">PENDING_VERIFICATION</ng-container></mat-option>
-    <mat-option value="PENDING_ACTIVATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_ACTIVATION_TITLE">PENDING_ACTIVATION</ng-container></mat-option>
-    <mat-option value="ACTIVE"><ng-container i18n="@@ACCOUNT_STATUS_ACTIVE_TITLE">ACTIVE</ng-container></mat-option>
-    <mat-option value="DISABLED"><ng-container i18n="@@ACCOUNT_STATUS_DISABLED_TITLE">DISABLED</ng-container></mat-option>
+    <mat-option value="PENDING_VERIFICATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">Pending verification</ng-container></mat-option>
+    <mat-option value="PENDING_ACTIVATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_ACTIVATION_TITLE">Pending activation</ng-container></mat-option>
+    <mat-option value="ACTIVE"><ng-container i18n="@@ACCOUNT_STATUS_ACTIVE_TITLE">Active</ng-container></mat-option>
+    <mat-option value="DISABLED"><ng-container i18n="@@ACCOUNT_STATUS_DISABLED_TITLE">Disabled</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -78,10 +78,10 @@ export const AccountStatusList: AccountStatusListSpec[] = [...AccountStatusData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountStatus" placeholder="AccountStatus" formControlName="accountStatus">
-    <mat-option value="PENDING_VERIFICATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">PENDING_VERIFICATION</ng-container> (PENDING_VERIFICATION)</mat-option>
-    <mat-option value="PENDING_ACTIVATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_ACTIVATION_TITLE">PENDING_ACTIVATION</ng-container> (PENDING_ACTIVATION)</mat-option>
-    <mat-option value="ACTIVE"><ng-container i18n="@@ACCOUNT_STATUS_ACTIVE_TITLE">ACTIVE</ng-container> (ACTIVE)</mat-option>
-    <mat-option value="DISABLED"><ng-container i18n="@@ACCOUNT_STATUS_DISABLED_TITLE">DISABLED</ng-container> (DISABLED)</mat-option>
+    <mat-option value="PENDING_VERIFICATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_VERIFICATION_TITLE">Pending verification</ng-container> (PENDING_VERIFICATION)</mat-option>
+    <mat-option value="PENDING_ACTIVATION"><ng-container i18n="@@ACCOUNT_STATUS_PENDING_ACTIVATION_TITLE">Pending activation</ng-container> (PENDING_ACTIVATION)</mat-option>
+    <mat-option value="ACTIVE"><ng-container i18n="@@ACCOUNT_STATUS_ACTIVE_TITLE">Active</ng-container> (ACTIVE)</mat-option>
+    <mat-option value="DISABLED"><ng-container i18n="@@ACCOUNT_STATUS_DISABLED_TITLE">Disabled</ng-container> (DISABLED)</mat-option>
   </mat-select>
  </mat-form-field>
 */

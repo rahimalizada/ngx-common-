@@ -51,9 +51,9 @@ export const BalanceOpTransactionTypeList: BalanceOpTransactionTypeListSpec[] = 
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpTransactionType" placeholder="BalanceOpTransactionType" formControlName="balanceOpTransactionType">
-    <mat-option value="CASH">CASH</mat-option>
-    <mat-option value="CREDIT_CARD">CREDIT_CARD</mat-option>
-    <mat-option value="BANK_ACCOUNT">BANK_ACCOUNT</mat-option>
+    <mat-option value="CASH">Cash</mat-option>
+    <mat-option value="CREDIT_CARD">Credit card</mat-option>
+    <mat-option value="BANK_ACCOUNT">Bank account</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -61,9 +61,9 @@ export const BalanceOpTransactionTypeList: BalanceOpTransactionTypeListSpec[] = 
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpTransactionType" placeholder="BalanceOpTransactionType" formControlName="balanceOpTransactionType">
-    <mat-option value="CASH"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CASH_TITLE">CASH</ng-container></mat-option>
-    <mat-option value="CREDIT_CARD"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CREDIT_CARD_TITLE">CREDIT_CARD</ng-container></mat-option>
-    <mat-option value="BANK_ACCOUNT"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_BANK_ACCOUNT_TITLE">BANK_ACCOUNT</ng-container></mat-option>
+    <mat-option value="CASH"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CASH_TITLE">Cash</ng-container></mat-option>
+    <mat-option value="CREDIT_CARD"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CREDIT_CARD_TITLE">Credit card</ng-container></mat-option>
+    <mat-option value="BANK_ACCOUNT"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_BANK_ACCOUNT_TITLE">Bank account</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -71,9 +71,9 @@ export const BalanceOpTransactionTypeList: BalanceOpTransactionTypeListSpec[] = 
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpTransactionType" placeholder="BalanceOpTransactionType" formControlName="balanceOpTransactionType">
-    <mat-option value="CASH"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CASH_TITLE">CASH</ng-container> (CASH)</mat-option>
-    <mat-option value="CREDIT_CARD"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CREDIT_CARD_TITLE">CREDIT_CARD</ng-container> (CREDIT_CARD)</mat-option>
-    <mat-option value="BANK_ACCOUNT"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_BANK_ACCOUNT_TITLE">BANK_ACCOUNT</ng-container> (BANK_ACCOUNT)</mat-option>
+    <mat-option value="CASH"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CASH_TITLE">Cash</ng-container> (CASH)</mat-option>
+    <mat-option value="CREDIT_CARD"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_CREDIT_CARD_TITLE">Credit card</ng-container> (CREDIT_CARD)</mat-option>
+    <mat-option value="BANK_ACCOUNT"><ng-container i18n="@@BALANCE_OP_TRANSACTION_TYPE_BANK_ACCOUNT_TITLE">Bank account</ng-container> (BANK_ACCOUNT)</mat-option>
   </mat-select>
  </mat-form-field>
 */

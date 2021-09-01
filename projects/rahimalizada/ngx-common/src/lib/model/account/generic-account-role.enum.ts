@@ -36,7 +36,7 @@ export const GenericAccountRoleList: GenericAccountRoleListSpec[] = [...GenericA
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="genericAccountRole" placeholder="GenericAccountRole" formControlName="genericAccountRole">
-    <mat-option value="USER">USER</mat-option>
+    <mat-option value="USER">User</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -44,7 +44,7 @@ export const GenericAccountRoleList: GenericAccountRoleListSpec[] = [...GenericA
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="genericAccountRole" placeholder="GenericAccountRole" formControlName="genericAccountRole">
-    <mat-option value="USER"><ng-container i18n="@@GENERIC_ACCOUNT_ROLE_USER_TITLE">USER</ng-container></mat-option>
+    <mat-option value="USER"><ng-container i18n="@@GENERIC_ACCOUNT_ROLE_USER_TITLE">User</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -52,7 +52,7 @@ export const GenericAccountRoleList: GenericAccountRoleListSpec[] = [...GenericA
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="genericAccountRole" placeholder="GenericAccountRole" formControlName="genericAccountRole">
-    <mat-option value="USER"><ng-container i18n="@@GENERIC_ACCOUNT_ROLE_USER_TITLE">USER</ng-container> (USER)</mat-option>
+    <mat-option value="USER"><ng-container i18n="@@GENERIC_ACCOUNT_ROLE_USER_TITLE">User</ng-container> (USER)</mat-option>
   </mat-select>
  </mat-form-field>
 */

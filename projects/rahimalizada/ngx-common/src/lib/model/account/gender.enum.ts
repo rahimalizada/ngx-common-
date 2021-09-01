@@ -21,8 +21,8 @@ export const GenderList: GenderListSpec[] = [...GenderData.entries()].map((entry
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="gender" placeholder="Gender" formControlName="gender">
-    <mat-option value="MALE">MALE</mat-option>
-    <mat-option value="FEMALE">FEMALE</mat-option>
+    <mat-option value="MALE">Male</mat-option>
+    <mat-option value="FEMALE">Female</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -30,8 +30,8 @@ export const GenderList: GenderListSpec[] = [...GenderData.entries()].map((entry
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="gender" placeholder="Gender" formControlName="gender">
-    <mat-option value="MALE"><ng-container i18n="@@GENDER_MALE_TITLE">MALE</ng-container></mat-option>
-    <mat-option value="FEMALE"><ng-container i18n="@@GENDER_FEMALE_TITLE">FEMALE</ng-container></mat-option>
+    <mat-option value="MALE"><ng-container i18n="@@GENDER_MALE_TITLE">Male</ng-container></mat-option>
+    <mat-option value="FEMALE"><ng-container i18n="@@GENDER_FEMALE_TITLE">Female</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -39,8 +39,8 @@ export const GenderList: GenderListSpec[] = [...GenderData.entries()].map((entry
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="gender" placeholder="Gender" formControlName="gender">
-    <mat-option value="MALE"><ng-container i18n="@@GENDER_MALE_TITLE">MALE</ng-container> (MALE)</mat-option>
-    <mat-option value="FEMALE"><ng-container i18n="@@GENDER_FEMALE_TITLE">FEMALE</ng-container> (FEMALE)</mat-option>
+    <mat-option value="MALE"><ng-container i18n="@@GENDER_MALE_TITLE">Male</ng-container> (MALE)</mat-option>
+    <mat-option value="FEMALE"><ng-container i18n="@@GENDER_FEMALE_TITLE">Female</ng-container> (FEMALE)</mat-option>
   </mat-select>
  </mat-form-field>
 */

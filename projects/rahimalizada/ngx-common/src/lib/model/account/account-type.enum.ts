@@ -56,10 +56,10 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountType" placeholder="AccountType" formControlName="accountType">
-    <mat-option value="STANDARD">STANDARD</mat-option>
-    <mat-option value="TRIAL">TRIAL</mat-option>
-    <mat-option value="PRO">PRO</mat-option>
-    <mat-option value="PAID">PAID</mat-option>
+    <mat-option value="STANDARD">Standard</mat-option>
+    <mat-option value="TRIAL">Trial</mat-option>
+    <mat-option value="PRO">Pro</mat-option>
+    <mat-option value="PAID">Paid</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -67,10 +67,10 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountType" placeholder="AccountType" formControlName="accountType">
-    <mat-option value="STANDARD"><ng-container i18n="@@ACCOUNT_TYPE_STANDARD_TITLE">STANDARD</ng-container></mat-option>
-    <mat-option value="TRIAL"><ng-container i18n="@@ACCOUNT_TYPE_TRIAL_TITLE">TRIAL</ng-container></mat-option>
-    <mat-option value="PRO"><ng-container i18n="@@ACCOUNT_TYPE_PRO_TITLE">PRO</ng-container></mat-option>
-    <mat-option value="PAID"><ng-container i18n="@@ACCOUNT_TYPE_PAID_TITLE">PAID</ng-container></mat-option>
+    <mat-option value="STANDARD"><ng-container i18n="@@ACCOUNT_TYPE_STANDARD_TITLE">Standard</ng-container></mat-option>
+    <mat-option value="TRIAL"><ng-container i18n="@@ACCOUNT_TYPE_TRIAL_TITLE">Trial</ng-container></mat-option>
+    <mat-option value="PRO"><ng-container i18n="@@ACCOUNT_TYPE_PRO_TITLE">Pro</ng-container></mat-option>
+    <mat-option value="PAID"><ng-container i18n="@@ACCOUNT_TYPE_PAID_TITLE">Paid</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -78,10 +78,10 @@ export const AccountTypeList: AccountTypeListSpec[] = [...AccountTypeData.entrie
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="accountType" placeholder="AccountType" formControlName="accountType">
-    <mat-option value="STANDARD"><ng-container i18n="@@ACCOUNT_TYPE_STANDARD_TITLE">STANDARD</ng-container> (STANDARD)</mat-option>
-    <mat-option value="TRIAL"><ng-container i18n="@@ACCOUNT_TYPE_TRIAL_TITLE">TRIAL</ng-container> (TRIAL)</mat-option>
-    <mat-option value="PRO"><ng-container i18n="@@ACCOUNT_TYPE_PRO_TITLE">PRO</ng-container> (PRO)</mat-option>
-    <mat-option value="PAID"><ng-container i18n="@@ACCOUNT_TYPE_PAID_TITLE">PAID</ng-container> (PAID)</mat-option>
+    <mat-option value="STANDARD"><ng-container i18n="@@ACCOUNT_TYPE_STANDARD_TITLE">Standard</ng-container> (STANDARD)</mat-option>
+    <mat-option value="TRIAL"><ng-container i18n="@@ACCOUNT_TYPE_TRIAL_TITLE">Trial</ng-container> (TRIAL)</mat-option>
+    <mat-option value="PRO"><ng-container i18n="@@ACCOUNT_TYPE_PRO_TITLE">Pro</ng-container> (PRO)</mat-option>
+    <mat-option value="PAID"><ng-container i18n="@@ACCOUNT_TYPE_PAID_TITLE">Paid</ng-container> (PAID)</mat-option>
   </mat-select>
  </mat-form-field>
 */

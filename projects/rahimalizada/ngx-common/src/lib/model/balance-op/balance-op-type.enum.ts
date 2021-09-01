@@ -46,9 +46,9 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpType" placeholder="BalanceOpType" formControlName="balanceOpType">
-    <mat-option value="DEPOSIT">DEPOSIT</mat-option>
-    <mat-option value="EXPENSE">EXPENSE</mat-option>
-    <mat-option value="WITHDRAWAL">WITHDRAWAL</mat-option>
+    <mat-option value="DEPOSIT">Deposit</mat-option>
+    <mat-option value="EXPENSE">Product/Service payment</mat-option>
+    <mat-option value="WITHDRAWAL">Withdrawal</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -56,9 +56,9 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpType" placeholder="BalanceOpType" formControlName="balanceOpType">
-    <mat-option value="DEPOSIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEPOSIT_TITLE">DEPOSIT</ng-container></mat-option>
-    <mat-option value="EXPENSE"><ng-container i18n="@@BALANCE_OP_TYPE_EXPENSE_TITLE">EXPENSE</ng-container></mat-option>
-    <mat-option value="WITHDRAWAL"><ng-container i18n="@@BALANCE_OP_TYPE_WITHDRAWAL_TITLE">WITHDRAWAL</ng-container></mat-option>
+    <mat-option value="DEPOSIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEPOSIT_TITLE">Deposit</ng-container></mat-option>
+    <mat-option value="EXPENSE"><ng-container i18n="@@BALANCE_OP_TYPE_EXPENSE_TITLE">Product/Service payment</ng-container></mat-option>
+    <mat-option value="WITHDRAWAL"><ng-container i18n="@@BALANCE_OP_TYPE_WITHDRAWAL_TITLE">Withdrawal</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -66,9 +66,9 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="balanceOpType" placeholder="BalanceOpType" formControlName="balanceOpType">
-    <mat-option value="DEPOSIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEPOSIT_TITLE">DEPOSIT</ng-container> (DEPOSIT)</mat-option>
-    <mat-option value="EXPENSE"><ng-container i18n="@@BALANCE_OP_TYPE_EXPENSE_TITLE">EXPENSE</ng-container> (EXPENSE)</mat-option>
-    <mat-option value="WITHDRAWAL"><ng-container i18n="@@BALANCE_OP_TYPE_WITHDRAWAL_TITLE">WITHDRAWAL</ng-container> (WITHDRAWAL)</mat-option>
+    <mat-option value="DEPOSIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEPOSIT_TITLE">Deposit</ng-container> (DEPOSIT)</mat-option>
+    <mat-option value="EXPENSE"><ng-container i18n="@@BALANCE_OP_TYPE_EXPENSE_TITLE">Product/Service payment</ng-container> (EXPENSE)</mat-option>
+    <mat-option value="WITHDRAWAL"><ng-container i18n="@@BALANCE_OP_TYPE_WITHDRAWAL_TITLE">Withdrawal</ng-container> (WITHDRAWAL)</mat-option>
   </mat-select>
  </mat-form-field>
 */

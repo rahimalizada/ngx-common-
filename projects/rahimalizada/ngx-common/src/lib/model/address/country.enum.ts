@@ -38,10 +38,10 @@ export const CountryList: CountryListSpec[] = [...CountryData.entries()].map((en
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="country" placeholder="Country" formControlName="country">
-    <mat-option value="TURKEY">TURKEY</mat-option>
+    <mat-option value="TURKEY">Turkey</mat-option>
     <mat-option value="USA">USA</mat-option>
-    <mat-option value="UKRAINE">UKRAINE</mat-option>
-    <mat-option value="AZERBAIJAN">AZERBAIJAN</mat-option>
+    <mat-option value="UKRAINE">Ukraine</mat-option>
+    <mat-option value="AZERBAIJAN">Azerbaijan</mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -49,10 +49,10 @@ export const CountryList: CountryListSpec[] = [...CountryData.entries()].map((en
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="country" placeholder="Country" formControlName="country">
-    <mat-option value="TURKEY"><ng-container i18n="@@COUNTRY_TURKEY_TITLE">TURKEY</ng-container></mat-option>
+    <mat-option value="TURKEY"><ng-container i18n="@@COUNTRY_TURKEY_TITLE">Turkey</ng-container></mat-option>
     <mat-option value="USA"><ng-container i18n="@@COUNTRY_USA_TITLE">USA</ng-container></mat-option>
-    <mat-option value="UKRAINE"><ng-container i18n="@@COUNTRY_UKRAINE_TITLE">UKRAINE</ng-container></mat-option>
-    <mat-option value="AZERBAIJAN"><ng-container i18n="@@COUNTRY_AZERBAIJAN_TITLE">AZERBAIJAN</ng-container></mat-option>
+    <mat-option value="UKRAINE"><ng-container i18n="@@COUNTRY_UKRAINE_TITLE">Ukraine</ng-container></mat-option>
+    <mat-option value="AZERBAIJAN"><ng-container i18n="@@COUNTRY_AZERBAIJAN_TITLE">Azerbaijan</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
 */
@@ -60,10 +60,10 @@ export const CountryList: CountryListSpec[] = [...CountryData.entries()].map((en
 /* Select
  <mat-form-field class="w-100">
   <mat-select name="country" placeholder="Country" formControlName="country">
-    <mat-option value="TURKEY"><ng-container i18n="@@COUNTRY_TURKEY_TITLE">TURKEY</ng-container> (TURKEY)</mat-option>
+    <mat-option value="TURKEY"><ng-container i18n="@@COUNTRY_TURKEY_TITLE">Turkey</ng-container> (TURKEY)</mat-option>
     <mat-option value="USA"><ng-container i18n="@@COUNTRY_USA_TITLE">USA</ng-container> (USA)</mat-option>
-    <mat-option value="UKRAINE"><ng-container i18n="@@COUNTRY_UKRAINE_TITLE">UKRAINE</ng-container> (UKRAINE)</mat-option>
-    <mat-option value="AZERBAIJAN"><ng-container i18n="@@COUNTRY_AZERBAIJAN_TITLE">AZERBAIJAN</ng-container> (AZERBAIJAN)</mat-option>
+    <mat-option value="UKRAINE"><ng-container i18n="@@COUNTRY_UKRAINE_TITLE">Ukraine</ng-container> (UKRAINE)</mat-option>
+    <mat-option value="AZERBAIJAN"><ng-container i18n="@@COUNTRY_AZERBAIJAN_TITLE">Azerbaijan</ng-container> (AZERBAIJAN)</mat-option>
   </mat-select>
  </mat-form-field>
 */
