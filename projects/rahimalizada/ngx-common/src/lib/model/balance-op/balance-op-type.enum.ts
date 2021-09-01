@@ -1,11 +1,12 @@
 export enum BalanceOpType {
   DEPOSIT = 'DEPOSIT',
-  EXPENSE = 'EXPENSE',
+  CREDIT = 'CREDIT',
+  DEBIT = 'DEBIT',
   WITHDRAWAL = 'WITHDRAWAL',
 }
 
 export class BalanceOpTypeSpec {
-  constructor(public cssClass: string, public deposit: boolean, public title: string, public textClass: string) {}
+  constructor(public cssClass: string, public debit: boolean, public title: string, public textClass: string) {}
 }
 
 export const BalanceOpTypeData = new Map<BalanceOpType, BalanceOpTypeSpec>([
@@ -14,13 +15,12 @@ export const BalanceOpTypeData = new Map<BalanceOpType, BalanceOpTypeSpec>([
     new BalanceOpTypeSpec('balance-op-type-deposit', true, $localize`:@@BALANCE_OP_TYPE_DEPOSIT_TITLE:Deposit`, 'text-primary'),
   ],
   [
-    BalanceOpType.EXPENSE,
-    new BalanceOpTypeSpec(
-      'balance-op-type-expense',
-      false,
-      $localize`:@@BALANCE_OP_TYPE_EXPENSE_TITLE:Product/Service payment`,
-      'text-success',
-    ),
+    BalanceOpType.CREDIT,
+    new BalanceOpTypeSpec('balance-op-type-credit', false, $localize`:@@BALANCE_OP_TYPE_CREDIT_TITLE:Credit`, 'text-success'),
+  ],
+  [
+    BalanceOpType.DEBIT,
+    new BalanceOpTypeSpec('balance-op-type-debit', true, $localize`:@@BALANCE_OP_TYPE_DEBIT_TITLE:Debit`, 'text-success'),
   ],
   [
     BalanceOpType.WITHDRAWAL,
@@ -32,7 +32,7 @@ export class BalanceOpTypeListSpec {
   constructor(
     public balanceOpType: BalanceOpType,
     public cssClass: string,
-    public deposit: boolean,
+    public debit: boolean,
     public title: string,
     public textClass: string,
   ) {}
@@ -47,7 +47,8 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
  <mat-form-field class="w-100">
   <mat-select name="balanceOpType" placeholder="BalanceOpType" formControlName="balanceOpType">
     <mat-option value="DEPOSIT">DEPOSIT</mat-option>
-    <mat-option value="EXPENSE">EXPENSE</mat-option>
+    <mat-option value="CREDIT">CREDIT</mat-option>
+    <mat-option value="DEBIT">DEBIT</mat-option>
     <mat-option value="WITHDRAWAL">WITHDRAWAL</mat-option>
   </mat-select>
  </mat-form-field>
@@ -57,7 +58,8 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
  <mat-form-field class="w-100">
   <mat-select name="balanceOpType" placeholder="BalanceOpType" formControlName="balanceOpType">
     <mat-option value="DEPOSIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEPOSIT_TITLE">Deposit</ng-container></mat-option>
-    <mat-option value="EXPENSE"><ng-container i18n="@@BALANCE_OP_TYPE_EXPENSE_TITLE">Product/Service payment</ng-container></mat-option>
+    <mat-option value="CREDIT"><ng-container i18n="@@BALANCE_OP_TYPE_CREDIT_TITLE">Credit</ng-container></mat-option>
+    <mat-option value="DEBIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEBIT_TITLE">Debit</ng-container></mat-option>
     <mat-option value="WITHDRAWAL"><ng-container i18n="@@BALANCE_OP_TYPE_WITHDRAWAL_TITLE">Withdrawal</ng-container></mat-option>
   </mat-select>
  </mat-form-field>
@@ -67,7 +69,8 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
  <mat-form-field class="w-100">
   <mat-select name="balanceOpType" placeholder="BalanceOpType" formControlName="balanceOpType">
     <mat-option value="DEPOSIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEPOSIT_TITLE">Deposit</ng-container> (DEPOSIT)</mat-option>
-    <mat-option value="EXPENSE"><ng-container i18n="@@BALANCE_OP_TYPE_EXPENSE_TITLE">Product/Service payment</ng-container> (EXPENSE)</mat-option>
+    <mat-option value="CREDIT"><ng-container i18n="@@BALANCE_OP_TYPE_CREDIT_TITLE">Credit</ng-container> (CREDIT)</mat-option>
+    <mat-option value="DEBIT"><ng-container i18n="@@BALANCE_OP_TYPE_DEBIT_TITLE">Debit</ng-container> (DEBIT)</mat-option>
     <mat-option value="WITHDRAWAL"><ng-container i18n="@@BALANCE_OP_TYPE_WITHDRAWAL_TITLE">Withdrawal</ng-container> (WITHDRAWAL)</mat-option>
   </mat-select>
  </mat-form-field>
@@ -96,10 +99,16 @@ export const BalanceOpTypeList: BalanceOpTypeListSpec[] = [...BalanceOpTypeData.
         <target>Depozit</target>
       </segment>
     </unit>
-    <unit id="BALANCE_OP_TYPE_EXPENSE_TITLE">
+    <unit id="BALANCE_OP_TYPE_CREDIT_TITLE">
       <segment state="translated">
-        <source>Product/Service payment</source>
-        <target>Mal/Xidmət ödənişi</target>
+        <source>Credit</source>
+        <target>Kredit</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_OP_TYPE_DEBIT_TITLE">
+      <segment state="translated">
+        <source>Debit</source>
+        <target>Debet</target>
       </segment>
     </unit>
     <unit id="BALANCE_OP_TYPE_WITHDRAWAL_TITLE">
