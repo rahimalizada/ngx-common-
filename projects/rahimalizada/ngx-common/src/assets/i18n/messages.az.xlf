@@ -212,10 +212,16 @@
         <target>Depozit</target>
       </segment>
     </unit>
-    <unit id="BALANCE_OP_TYPE_EXPENSE_TITLE">
+    <unit id="BALANCE_OP_TYPE_CREDIT_TITLE">
       <segment state="translated">
-        <source>Product/Service payment</source>
-        <target>Mal/Xidmət ödənişi</target>
+        <source>Credit</source>
+        <target>Kredit</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_OP_TYPE_DEBIT_TITLE">
+      <segment state="translated">
+        <source>Debit</source>
+        <target>Debet</target>
       </segment>
     </unit>
     <unit id="BALANCE_OP_TYPE_WITHDRAWAL_TITLE">
