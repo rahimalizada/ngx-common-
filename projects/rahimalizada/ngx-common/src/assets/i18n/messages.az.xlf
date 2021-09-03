@@ -122,6 +122,12 @@
         <target>İstifadəçi hesab rolu</target>
       </segment>
     </unit>
+    <unit id="GENERIC_BRANCH_DEFAULT_TITLE">
+      <segment state="translated">
+        <source>Default branch</source>
+        <target>Standart filial</target>
+      </segment>
+    </unit>
     <unit id="TOS_STATUS_ACCEPTED_TITLE">
       <segment state="translated">
         <source>Accepted</source>
