@@ -230,6 +230,66 @@
         <target>Çıxarılma</target>
       </segment>
     </unit>
+    <unit id="CURRENCY_USD_TITLE">
+      <segment state="translated">
+        <source>United States dollar</source>
+        <target>ABŞ dolları</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_USD_SHORTNAME">
+      <segment state="translated">
+        <source>dollar</source>
+        <target>dollar</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_EUR_TITLE">
+      <segment state="translated">
+        <source>Euro</source>
+        <target>Avro</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_EUR_SHORTNAME">
+      <segment state="translated">
+        <source>euro</source>
+        <target>avro</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_AZN_TITLE">
+      <segment state="translated">
+        <source>Azerbaijani manat</source>
+        <target>Azərbaycan manatı</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_AZN_SHORTNAME">
+      <segment state="translated">
+        <source>manat</source>
+        <target>manat</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_TRY_TITLE">
+      <segment state="translated">
+        <source>Turkish lira</source>
+        <target>Türk lirəsi</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_TRY_SHORTNAME">
+      <segment state="translated">
+        <source>lira</source>
+        <target>lirə</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_UAH_TITLE">
+      <segment state="translated">
+        <source>Ukrainian hryvnia</source>
+        <target>Ukrayna qrivnası</target>
+      </segment>
+    </unit>
+    <unit id="CURRENCY_UAH_SHORTNAME">
+      <segment state="translated">
+        <source>hrivnia</source>
+        <target>qrivna</target>
+      </segment>
+    </unit>
     <unit id="NOTIFICATION_METHOD_APP_TITLE">
       <segment state="translated">
         <source>App</source>
