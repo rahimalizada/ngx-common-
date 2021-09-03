@@ -230,6 +230,54 @@
         <target>Çıxarılma</target>
       </segment>
     </unit>
+    <unit id="BALANCE_TYPE_ORDER_TITLE">
+      <segment state="translated">
+        <source>Order</source>
+        <target>Sifarış</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_TYPE_ORDER_DESCRIPTION">
+      <segment state="translated">
+        <source>Order operation</source>
+        <target>Sifariş balans əməliyyatı</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_TYPE_SHIPMENT_TITLE">
+      <segment state="translated">
+        <source>Shipment</source>
+        <target>Daşınma</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_TYPE_SHIPMENT_DESCRIPTION">
+      <segment state="translated">
+        <source>Shipment operation</source>
+        <target>Daşınma balans əməliyyatı</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_TYPE_DELIVERY_TITLE">
+      <segment state="translated">
+        <source>Delivery</source>
+        <target>Çatdırılma</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_TYPE_DELIVERY_DESCRIPTION">
+      <segment state="translated">
+        <source>Delivery operation</source>
+        <target>Çatdırılma balans əməliyyatı</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_TYPE_SERVICE_FEE_TITLE">
+      <segment state="translated">
+        <source>Service fee</source>
+        <target>Xidmət haqqı</target>
+      </segment>
+    </unit>
+    <unit id="BALANCE_TYPE_SERVICE_FEE_DESCRIPTION">
+      <segment state="translated">
+        <source>Service fee operation</source>
+        <target>Xidmət haqqı balans əməliyyatı</target>
+      </segment>
+    </unit>
     <unit id="CURRENCY_USD_TITLE">
       <segment state="translated">
         <source>United States dollar</source>

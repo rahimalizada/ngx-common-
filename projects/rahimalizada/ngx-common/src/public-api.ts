@@ -44,6 +44,7 @@ export * from './lib/model/auth/reset-password-confirmation.model';
 export * from './lib/model/auth/reset-password-request.model';
 export * from './lib/model/balance-op/balance-op-transaction-type.enum';
 export * from './lib/model/balance-op/balance-op-type.enum';
+export * from './lib/model/balance-op/balance-type.enum';
 export * from './lib/model/batch-update-request.model';
 export * from './lib/model/contact-request/contact-request.model';
 export * from './lib/model/currency/currency.enum';
