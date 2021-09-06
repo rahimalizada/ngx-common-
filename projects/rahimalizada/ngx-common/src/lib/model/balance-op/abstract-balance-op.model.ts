@@ -6,7 +6,6 @@ import { BalanceType } from './balance-type.enum';
 
 export interface AbstractBalanceOp<T> extends Model<string, T> {
   accountId: string;
-  createdById: string;
   amount: number;
   currency: Currency;
   balanceType: BalanceType;
