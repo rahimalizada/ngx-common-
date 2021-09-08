@@ -37,7 +37,6 @@ export * from './lib/model/account/with-permissions.model';
 export * from './lib/model/address/address.model';
 export * from './lib/model/address/country.enum';
 export * from './lib/model/auth/login-request.model';
-export * from './lib/model/auth/register-request.model';
 export * from './lib/model/auth/renew-token-request.model';
 export * from './lib/model/auth/reset-password-confirmation.model';
 export * from './lib/model/balance-op/abstract-balance-op.model';
