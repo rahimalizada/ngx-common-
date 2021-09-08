@@ -13,7 +13,7 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
 
   protected jwtHelper = new JwtHelperService();
 
-  constructor(private storageItemId: string, private http: HttpClient, public apiPath: string, public defaultLanguages: string[]) {
+  constructor(private storageItemId: string, private http: HttpClient, public apiPath: string) {
     this.authResultSubject.subscribe((authResult) => {
       if (authResult) {
         this.shiroTrie.reset();

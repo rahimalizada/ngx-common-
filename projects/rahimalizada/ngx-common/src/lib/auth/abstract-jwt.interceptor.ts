@@ -11,18 +11,16 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     private authService: AbstractAuthService<T>,
     private router: Router,
     private tokenRenewalFailRedirect: string,
+    private defaultLanguages: string[],
   ) {}
 
   intercept(req: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     const authResult = this.authService.authResultSubject.value ? this.authService.authResultSubject.value : null;
-    // console.log(authResult);
-    // console.log(authResult?.subject.locale);
-    // console.log(this.authService.defaultLanguages);
     const token = authResult?.token;
     const tokenExpired = token ? this.authService.isTokenExpired(token) : true;
     const isAuthPath = req.url.search(this.authService.apiPath) === 0; // starts with /auth/...
 
-    const withHeaders = this.addHeaders(req);
+    const withHeaders = this.addHeaders(req, authResult?.subject);
 
     if (isAuthPath) {
       return next.handle(withHeaders);
@@ -72,9 +70,13 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     );
   }
 
-  addHeaders(req: HttpRequest<unknown>): HttpRequest<unknown> {
+  addHeaders(req: HttpRequest<unknown>, account?: T): HttpRequest<unknown> {
+    const languages = account ? [account.locale].concat(this.defaultLanguages) : this.defaultLanguages;
+    const languageHeader = [...new Set(languages)].join(', ');
+
     return req.clone({
       setHeaders: {
+        'Accept-Language': languageHeader,
         'X-Client-Id': this.clientId,
         'X-Timestamp': new Date().toISOString(),
       },
