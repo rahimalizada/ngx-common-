@@ -10,8 +10,8 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     private clientId: string,
     private authService: AbstractAuthService<T>,
     private router: Router,
-    private tokenRenewalFailRedirect: string,
     private appOrigin: string,
+    private tokenRenewalFailRedirect: string,
     private defaultLanguages: string[],
   ) {}
 
