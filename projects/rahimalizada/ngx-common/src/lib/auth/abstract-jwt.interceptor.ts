@@ -2,11 +2,10 @@ import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest
 import { Router } from '@angular/router';
 import { Observable, throwError } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
+import { AbstractAccount } from '../model/account/abstract-account.model';
 import { AbstractAuthService } from './abstract-auth.service';
 
-export abstract class AbstractJwtInterceptor<T extends { token: string; refreshToken: string; permissions: string[] }>
-  implements HttpInterceptor
-{
+export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, unknown>> implements HttpInterceptor {
   constructor(
     private clientId: string,
     private authService: AbstractAuthService<T>,

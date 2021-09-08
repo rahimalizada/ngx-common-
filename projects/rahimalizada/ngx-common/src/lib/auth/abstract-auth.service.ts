@@ -6,9 +6,9 @@ import * as shiro from 'shiro-trie';
 import { AuthResult } from '../../public-api';
 import { AbstractAccount } from './../model/account/abstract-account.model';
 
-export abstract class AbstractAuthService<T extends AuthResult<AbstractAccount<unknown, unknown>>> {
+export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unknown>> {
   loggedInSubject = new BehaviorSubject<boolean>(false);
-  authResultSubject = new BehaviorSubject<T | null>(null);
+  authResultSubject = new BehaviorSubject<AuthResult<T> | null>(null);
   shiroTrie = shiro.newTrie();
 
   protected jwtHelper = new JwtHelperService();
@@ -37,7 +37,7 @@ export abstract class AbstractAuthService<T extends AuthResult<AbstractAccount<u
     }
     return false;
   }
-  saveStorage(authResult: T): void {
+  saveStorage(authResult: AuthResult<T>): void {
     localStorage.setItem(this.storageItemId, JSON.stringify(authResult));
     this.loggedInSubject.next(this.isValid(authResult));
     this.authResultSubject.next(authResult);
@@ -48,15 +48,15 @@ export abstract class AbstractAuthService<T extends AuthResult<AbstractAccount<u
     return this.loggedInSubject.value;
   }
 
-  renewToken(): Observable<T | null> {
+  renewToken(): Observable<AuthResult<T> | null> {
     if (!this.authResultSubject.value || !this.authResultSubject.value.refreshToken) {
       this.logout();
-      return new Observable((observer: Observer<T | null>) => {
+      return new Observable((observer: Observer<AuthResult<T> | null>) => {
         observer.next(null);
         observer.complete();
       });
     }
-    return this.http.post<T>(this.apiPath + '/renew-token', { refreshToken: this.authResultSubject.value.refreshToken }).pipe(
+    return this.http.post<AuthResult<T>>(this.apiPath + '/renew-token', { refreshToken: this.authResultSubject.value.refreshToken }).pipe(
       tap(
         (authResult) => {
           console.log('Token renewed, expiration date: ' + this.jwtHelper.getTokenExpirationDate(authResult.token));
@@ -76,8 +76,8 @@ export abstract class AbstractAuthService<T extends AuthResult<AbstractAccount<u
     this.authResultSubject.next(null);
   }
 
-  register(data: unknown): Observable<T> {
-    return this.http.post<T>(this.apiPath + '/register', data).pipe(
+  register(data: unknown): Observable<AuthResult<T>> {
+    return this.http.post<AuthResult<T>>(this.apiPath + '/register', data).pipe(
       tap(
         (result) => this.saveStorage(result),
         () => this.logout(),
@@ -85,8 +85,8 @@ export abstract class AbstractAuthService<T extends AuthResult<AbstractAccount<u
     );
   }
 
-  login(data: unknown): Observable<T> {
-    return this.http.post<T>(this.apiPath + '/login', data).pipe(
+  login(data: unknown): Observable<AuthResult<T>> {
+    return this.http.post<AuthResult<T>>(this.apiPath + '/login', data).pipe(
       tap(
         (result) => this.saveStorage(result),
         () => this.logout(),
@@ -114,7 +114,7 @@ export abstract class AbstractAuthService<T extends AuthResult<AbstractAccount<u
     );
   }
 
-  private isValid(authResult: T | null): boolean {
+  private isValid(authResult: AuthResult<T> | null): boolean {
     if (!authResult || !authResult.token) {
       return false;
     }

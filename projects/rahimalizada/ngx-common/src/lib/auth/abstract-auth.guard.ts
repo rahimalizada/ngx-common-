@@ -1,11 +1,10 @@
 import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, Router, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { AbstractAccount } from '../model/account/abstract-account.model';
 import { AbstractAuthService } from './abstract-auth.service';
 
-export abstract class AbstractAuthGuard<T extends { token: string; refreshToken: string; permissions: string[] }>
-  implements CanActivate, CanActivateChild
-{
+export abstract class AbstractAuthGuard<T extends AbstractAccount<unknown, unknown>> implements CanActivate, CanActivateChild {
   constructor(protected authService: AbstractAuthService<T>, protected router: Router, private tokenRenewalFailRedirect: string) {}
 
   canActivate(route: ActivatedRouteSnapshot): Observable<boolean | UrlTree> | boolean | UrlTree {
