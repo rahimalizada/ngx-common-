@@ -13,8 +13,11 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     private tokenRenewalFailRedirect: string,
   ) {}
 
-  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const token = this.authService.authResultSubject.value ? this.authService.authResultSubject.value.token : null;
+  intercept(req: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+    const authResult = this.authService.authResultSubject.value ? this.authService.authResultSubject.value : null;
+    console.log(authResult);
+    console.log(authResult?.subject.locale);
+    const token = authResult?.token;
     const tokenExpired = token ? this.authService.isTokenExpired(token) : true;
     const isAuthPath = req.url.search(this.authService.apiPath) === 0; // starts with /auth/...
 
@@ -29,7 +32,7 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     } else if (token) {
       //
       return next.handle(this.addToken(withHeaders)).pipe(
-        catchError((error: any) => {
+        catchError((error: unknown) => {
           if (error instanceof HttpErrorResponse && error.status === 401) {
             console.log('Request failed with 401 status code, renewing the token and trying again');
             return this.tryWithRenewedToken(withHeaders, next);
@@ -43,9 +46,9 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     return next.handle(withHeaders);
   }
 
-  tryWithRenewedToken(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+  tryWithRenewedToken(req: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     return this.authService.renewToken().pipe(
-      switchMap((authResult) => {
+      switchMap(() => {
         console.log('Retrying request with renewed token');
         return next.handle(this.addToken(req)).pipe(
           catchError((error) => {
@@ -68,7 +71,7 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     );
   }
 
-  addHeaders(req: HttpRequest<any>): HttpRequest<any> {
+  addHeaders(req: HttpRequest<unknown>): HttpRequest<unknown> {
     return req.clone({
       setHeaders: {
         'X-Client-Id': this.clientId,
@@ -78,7 +81,7 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     });
   }
 
-  private addToken(req: HttpRequest<any>): HttpRequest<any> {
+  private addToken(req: HttpRequest<unknown>): HttpRequest<unknown> {
     return req.clone({
       setHeaders: {
         Authorization: `Bearer ${this.authService.authResultSubject.value?.token}`,
