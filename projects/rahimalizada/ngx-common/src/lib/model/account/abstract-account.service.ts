@@ -13,8 +13,8 @@ export class AbstractAccountService<S extends AbstractAccount<T, U>, T, U> exten
     return this.httpClient.post<AuthResult<S>>(`${this.basePath}/password`, value);
   }
 
-  resendActivationCode(requestHref: string): Observable<void> {
-    return this.httpClient.post<void>(`${this.basePath}/resend-activation-code`, requestHref);
+  resendActivationCode(): Observable<void> {
+    return this.httpClient.post<void>(`${this.basePath}/resend-activation-code`, {});
   }
 
   activateAccount(code: string): Observable<AuthResult<S>> {
