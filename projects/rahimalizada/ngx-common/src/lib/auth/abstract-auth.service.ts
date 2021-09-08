@@ -3,8 +3,10 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, Observable, Observer } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import * as shiro from 'shiro-trie';
+import { AuthResult } from '../../public-api';
+import { AbstractAccount } from './../model/account/abstract-account.model';
 
-export abstract class AbstractAuthService<T extends { token: string; refreshToken: string; permissions: string[] }> {
+export abstract class AbstractAuthService<T extends AuthResult<AbstractAccount<unknown, unknown>>> {
   loggedInSubject = new BehaviorSubject<boolean>(false);
   authResultSubject = new BehaviorSubject<T | null>(null);
   shiroTrie = shiro.newTrie();
