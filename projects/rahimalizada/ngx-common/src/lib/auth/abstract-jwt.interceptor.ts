@@ -11,6 +11,7 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     private authService: AbstractAuthService<T>,
     private router: Router,
     private tokenRenewalFailRedirect: string,
+    private appOrigin: string,
     private defaultLanguages: string[],
   ) {}
 
@@ -78,6 +79,7 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
       setHeaders: {
         'Accept-Language': languageHeader,
         'X-Client-Id': this.clientId,
+        'X-App-Origin': this.appOrigin,
         'X-Timestamp': new Date().toISOString(),
       },
       withCredentials: true,
