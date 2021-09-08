@@ -94,8 +94,8 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     );
   }
 
-  resetPasswordRequest(data: unknown): Observable<void> {
-    return this.http.post<void>(this.apiPath + '/reset-password/request', data);
+  resetPasswordRequest(email: string): Observable<void> {
+    return this.http.post<void>(this.apiPath + '/reset-password/request', email);
   }
 
   resetPasswordConfirmation(data: unknown): Observable<void> {
