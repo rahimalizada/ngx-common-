@@ -3,7 +3,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, Observable, Observer } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import * as shiro from 'shiro-trie';
-import { AuthResult } from '../../public-api';
+import { AuthResult, LoginRequest, ResetPasswordConfirmation } from '../../public-api';
 import { AbstractAccount } from './../model/account/abstract-account.model';
 
 export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unknown>> {
@@ -76,7 +76,7 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     this.authResultSubject.next(null);
   }
 
-  register(data: unknown): Observable<AuthResult<T>> {
+  register(data: T): Observable<AuthResult<T>> {
     return this.http.post<AuthResult<T>>(this.apiPath + '/register', data).pipe(
       tap(
         (result) => this.saveStorage(result),
@@ -85,7 +85,7 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     );
   }
 
-  login(data: unknown): Observable<AuthResult<T>> {
+  login(data: LoginRequest): Observable<AuthResult<T>> {
     return this.http.post<AuthResult<T>>(this.apiPath + '/login', data).pipe(
       tap(
         (result) => this.saveStorage(result),
@@ -98,7 +98,7 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     return this.http.post<void>(this.apiPath + '/reset-password/request', email);
   }
 
-  resetPasswordConfirmation(data: unknown): Observable<void> {
+  resetPasswordConfirmation(data: ResetPasswordConfirmation): Observable<void> {
     return this.http.post<void>(this.apiPath + '/reset-password/confirmation', data);
   }
 
