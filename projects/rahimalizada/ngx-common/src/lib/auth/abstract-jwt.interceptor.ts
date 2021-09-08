@@ -17,6 +17,7 @@ export abstract class AbstractJwtInterceptor<T extends AbstractAccount<unknown, 
     const authResult = this.authService.authResultSubject.value ? this.authService.authResultSubject.value : null;
     console.log(authResult);
     console.log(authResult?.subject.locale);
+    console.log(this.authService.defaultLanguages);
     const token = authResult?.token;
     const tokenExpired = token ? this.authService.isTokenExpired(token) : true;
     const isAuthPath = req.url.search(this.authService.apiPath) === 0; // starts with /auth/...
