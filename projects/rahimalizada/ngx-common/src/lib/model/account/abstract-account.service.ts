@@ -11,11 +11,11 @@ export class AbstractAccountService<S extends AbstractAccount<T, U>, T, U> exten
     super(httpClient, basePath);
   }
 
-  changePassword(value: PasswordChangeRequest, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<AuthResult<S>> {
+  changePassword(value: PasswordChangeRequest, recaptchaSiteKey: string, recaptchaResponse: string): Observable<AuthResult<S>> {
     return this.httpClient.post<AuthResult<S>>(
       `${this.basePath}/password`,
       value,
-      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
+      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaResponse),
     );
   }
 
@@ -23,11 +23,11 @@ export class AbstractAccountService<S extends AbstractAccount<T, U>, T, U> exten
     return this.httpClient.post<void>(`${this.basePath}/resend-activation-code`, {});
   }
 
-  activateAccount(code: string, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<AuthResult<S>> {
+  activateAccount(code: string, recaptchaSiteKey: string, recaptchaResponse: string): Observable<AuthResult<S>> {
     return this.httpClient.post<AuthResult<S>>(
       `${this.basePath}/activate`,
       code,
-      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
+      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaResponse),
     );
   }
 }

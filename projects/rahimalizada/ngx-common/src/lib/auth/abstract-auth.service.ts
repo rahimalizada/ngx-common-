@@ -24,16 +24,16 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     this.loadStorage();
   }
 
-  public static buildRecaptchaHeaders(recaptchaSiteKey: string, recaptchaConfirmation: string): HttpHeaders {
+  public static buildRecaptchaHeaders(recaptchaSiteKey: string, recaptchaResponse: string): HttpHeaders {
     return new HttpHeaders({
       'X-Recapthca-Site-Key': recaptchaSiteKey,
-      'X-Recapthca-Confirmation': recaptchaConfirmation,
+      'X-Recapthca-Confirmation': recaptchaResponse,
     });
   }
 
-  public static buildRecaptchaOptions(recaptchaSiteKey: string, recaptchaConfirmation: string): { headers: HttpHeaders } {
+  public static buildRecaptchaOptions(recaptchaSiteKey: string, recaptchaResponse: string): { headers: HttpHeaders } {
     return {
-      headers: AbstractAuthService.buildRecaptchaHeaders(recaptchaSiteKey, recaptchaConfirmation),
+      headers: AbstractAuthService.buildRecaptchaHeaders(recaptchaSiteKey, recaptchaResponse),
     };
   }
 
@@ -89,13 +89,9 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     this.authResultSubject.next(null);
   }
 
-  register(data: T, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<AuthResult<T>> {
+  register(data: T, recaptchaSiteKey: string, recaptchaResponse: string): Observable<AuthResult<T>> {
     return this.http
-      .post<AuthResult<T>>(
-        this.apiPath + '/register',
-        data,
-        AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
-      )
+      .post<AuthResult<T>>(this.apiPath + '/register', data, AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaResponse))
       .pipe(
         tap(
           (result) => this.saveStorage(result),
@@ -104,13 +100,9 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
       );
   }
 
-  login(data: LoginRequest, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<AuthResult<T>> {
+  login(data: LoginRequest, recaptchaSiteKey: string, recaptchaResponse: string): Observable<AuthResult<T>> {
     return this.http
-      .post<AuthResult<T>>(
-        this.apiPath + '/login',
-        data,
-        AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
-      )
+      .post<AuthResult<T>>(this.apiPath + '/login', data, AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaResponse))
       .pipe(
         tap(
           (result) => this.saveStorage(result),
@@ -119,19 +111,19 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
       );
   }
 
-  resetPasswordRequest(email: string, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<void> {
+  resetPasswordRequest(email: string, recaptchaSiteKey: string, recaptchaResponse: string): Observable<void> {
     return this.http.post<void>(
       this.apiPath + '/reset-password/request',
       email,
-      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
+      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaResponse),
     );
   }
 
-  resetPasswordConfirmation(data: ResetPasswordConfirmation, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<void> {
+  resetPasswordConfirmation(data: ResetPasswordConfirmation, recaptchaSiteKey: string, recaptchaResponse: string): Observable<void> {
     return this.http.post<void>(
       this.apiPath + '/reset-password/confirmation',
       data,
-      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
+      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaResponse),
     );
   }
 
