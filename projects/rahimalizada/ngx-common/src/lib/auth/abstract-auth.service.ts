@@ -24,6 +24,19 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     this.loadStorage();
   }
 
+  public static buildRecaptchaHeaders(recaptchaSiteKey: string, recaptchaConfirmation: string): HttpHeaders {
+    return new HttpHeaders({
+      'X-Recapthca-Site-Key': recaptchaSiteKey,
+      'X-Recapthca-Confirmation': recaptchaConfirmation,
+    });
+  }
+
+  public static buildRecaptchaOptions(recaptchaSiteKey: string, recaptchaConfirmation: string): { headers: HttpHeaders } {
+    return {
+      headers: AbstractAuthService.buildRecaptchaHeaders(recaptchaSiteKey, recaptchaConfirmation),
+    };
+  }
+
   isTokenExpired(token: string): boolean {
     try {
       const expired = this.jwtHelper.isTokenExpired(token);
@@ -76,36 +89,50 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     this.authResultSubject.next(null);
   }
 
-  register(data: T): Observable<AuthResult<T>> {
-    return this.http.post<AuthResult<T>>(this.apiPath + '/register', data).pipe(
-      tap(
-        (result) => this.saveStorage(result),
-        () => this.logout(),
-      ),
-    );
+  register(data: T, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<AuthResult<T>> {
+    return this.http
+      .post<AuthResult<T>>(
+        this.apiPath + '/register',
+        data,
+        AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
+      )
+      .pipe(
+        tap(
+          (result) => this.saveStorage(result),
+          () => this.logout(),
+        ),
+      );
   }
 
   login(data: LoginRequest, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<AuthResult<T>> {
-    const options = {
-      headers: new HttpHeaders({
-        'X-Recapthca-Site-Key': recaptchaSiteKey,
-        'X-Recapthca-Confirmation': recaptchaConfirmation,
-      }),
-    };
-    return this.http.post<AuthResult<T>>(this.apiPath + '/login', data, options).pipe(
-      tap(
-        (result) => this.saveStorage(result),
-        () => this.logout(),
-      ),
+    return this.http
+      .post<AuthResult<T>>(
+        this.apiPath + '/login',
+        data,
+        AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
+      )
+      .pipe(
+        tap(
+          (result) => this.saveStorage(result),
+          () => this.logout(),
+        ),
+      );
+  }
+
+  resetPasswordRequest(email: string, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<void> {
+    return this.http.post<void>(
+      this.apiPath + '/reset-password/request',
+      email,
+      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
     );
   }
 
-  resetPasswordRequest(email: string): Observable<void> {
-    return this.http.post<void>(this.apiPath + '/reset-password/request', email);
-  }
-
-  resetPasswordConfirmation(data: ResetPasswordConfirmation): Observable<void> {
-    return this.http.post<void>(this.apiPath + '/reset-password/confirmation', data);
+  resetPasswordConfirmation(data: ResetPasswordConfirmation, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<void> {
+    return this.http.post<void>(
+      this.apiPath + '/reset-password/confirmation',
+      data,
+      AbstractAuthService.buildRecaptchaOptions(recaptchaSiteKey, recaptchaConfirmation),
+    );
   }
 
   hasAllPermissions(...permissions: string[]): boolean {
