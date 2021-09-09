@@ -11,7 +11,6 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { StatusEditComponent } from './component/status-edit/status-edit.component';
 import { StatusListComponent } from './component/status-list/status-list.component';
-import { NullDefaultValueDirective } from './directives/null-default-value.directive';
 import { ProgressIndicatorDirective } from './directives/progress-indicator.directive';
 import { ProgressIndicatorInterceptor } from './interceptors/progress-indicator.interceptor';
 import { PwaLaunchModeInterceptor } from './interceptors/pwa-launch-mode.interceptor';
@@ -21,15 +20,7 @@ import { YesNoPipe } from './pipes/yes-no.pipe';
 import { DateParserInterceptor } from './rest/date-parser.interceptor';
 
 @NgModule({
-  declarations: [
-    YesNoPipe,
-    ValueOrDashPipe,
-    SafePipe,
-    ProgressIndicatorDirective,
-    NullDefaultValueDirective,
-    StatusEditComponent,
-    StatusListComponent,
-  ],
+  declarations: [YesNoPipe, ValueOrDashPipe, SafePipe, ProgressIndicatorDirective, StatusEditComponent, StatusListComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -48,7 +39,6 @@ import { DateParserInterceptor } from './rest/date-parser.interceptor';
     ValueOrDashPipe,
     SafePipe,
     ProgressIndicatorDirective,
-    NullDefaultValueDirective,
     StatusEditComponent,
     StatusListComponent,
     MatPaginatorModule,
