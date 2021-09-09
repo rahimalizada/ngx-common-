@@ -15,6 +15,7 @@ export * from './lib/component/mat-table/abstract-mat-table-component';
 export * from './lib/component/mat-table/abstract-mat-table-filter-panel';
 export * from './lib/component/status-edit/status-edit.component';
 export * from './lib/component/status-list/status-list.component';
+export * from './lib/directives/null-default-value.directive';
 export * from './lib/directives/progress-indicator.directive';
 export * from './lib/helpers/enum-sort';
 export * from './lib/helpers/reload-page.helper';
