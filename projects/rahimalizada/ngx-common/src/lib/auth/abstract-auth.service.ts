@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, Observable, Observer } from 'rxjs';
 import { tap } from 'rxjs/operators';
@@ -85,8 +85,14 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     );
   }
 
-  login(data: LoginRequest): Observable<AuthResult<T>> {
-    return this.http.post<AuthResult<T>>(this.apiPath + '/login', data).pipe(
+  login(data: LoginRequest, recaptchaSiteKey: string, recaptchaConfirmation: string): Observable<AuthResult<T>> {
+    const options = {
+      headers: new HttpHeaders({
+        'X-Recapthca-Site-Key': recaptchaSiteKey,
+        'X-Recapthca-Confirmation': recaptchaConfirmation,
+      }),
+    };
+    return this.http.post<AuthResult<T>>(this.apiPath + '/login', data, options).pipe(
       tap(
         (result) => this.saveStorage(result),
         () => this.logout(),
