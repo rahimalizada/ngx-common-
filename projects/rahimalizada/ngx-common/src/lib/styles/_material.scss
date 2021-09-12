@@ -90,3 +90,12 @@ table td.mat-cell:first-of-type.mat-column-select {
 mat-expansion-panel.mat-expanded .mat-expansion-panel-header-title {
   color: rgba(0, 0, 0, 0.87);
 }
+
+// Long material checkbox wrap fix
+.mat-checkbox-layout {
+  white-space: normal !important;
+}
+
+.mat-checkbox-inner-container {
+  margin-top: 3px !important;
+}
