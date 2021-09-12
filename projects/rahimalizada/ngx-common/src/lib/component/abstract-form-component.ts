@@ -2,12 +2,11 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { FormArray, FormGroup } from '@angular/forms';
 
 export class AbstractFormComponent {
+  static readonly defaultErrorMessage = $localize`:@@ABSTRACT_FORM_COMPONENT_DEFAULT_ERROR_MESSAGE:Operation failed, please try again shortly.`;
   form!: FormGroup;
   submitButtonDisabled = false;
   errorMessage?: string | null;
   showSuccessMessage = false;
-
-  constructor(private errorMsg: string) {} // 'Operation failed, please try again shortly.'
 
   isInvalid(ctrlName: string, parent?: string, index?: number): boolean {
     const control = this.getControl(ctrlName, parent, index);
@@ -56,7 +55,21 @@ export class AbstractFormComponent {
     if (error.status >= 400 && error.status <= 499) {
       this.errorMessage = error.error;
     } else {
-      this.errorMessage = this.errorMsg;
+      this.errorMessage = AbstractFormComponent.defaultErrorMessage;
     }
   }
 }
+
+/* XLIFF TRANSLATION FOR LANGUAGE: AZ
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="az">
+  <file id="ngi18n" original="ng.template">
+    <unit id="ABSTRACT_FORM_COMPONENT_DEFAULT_ERROR_MESSAGE">
+      <segment state="translated">
+        <source>Operation failed, please try again shortly.</source>
+        <target>Əməliyyat yerinə yetirilərkən xəta baş verdi. Lütfən qısa müddətdən sonra yenidən cəhd edin.</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
+*/
