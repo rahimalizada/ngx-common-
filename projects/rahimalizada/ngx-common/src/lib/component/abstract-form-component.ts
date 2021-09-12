@@ -7,7 +7,7 @@ export class AbstractFormComponent {
   errorMessage?: string | null;
   showSuccessMessage = false;
 
-  constructor(private errorMsg: string = 'Operation failed, please try again shortly.') {}
+  constructor(private errorMsg: string) {} // 'Operation failed, please try again shortly.'
 
   isInvalid(ctrlName: string, parent?: string, index?: number): boolean {
     const control = this.getControl(ctrlName, parent, index);
