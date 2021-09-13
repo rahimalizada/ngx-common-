@@ -46,6 +46,9 @@ export * from './lib/model/balance-op/balance-type.enum';
 export * from './lib/model/batch-update-request.model';
 export * from './lib/model/contact-request/contact-request.model';
 export * from './lib/model/currency/currency.enum';
+export * from './lib/model/email/email-address.model';
+export * from './lib/model/email/email-attachment.model';
+export * from './lib/model/email/email.model';
 export * from './lib/model/httpstorage/http-file.model';
 export * from './lib/model/model.model';
 export * from './lib/model/mongodb/object-id.model';
@@ -81,5 +84,3 @@ export * from './lib/validators/not-blank-validator';
 export * from './lib/validators/password-validator';
 export * from './lib/validators/pattern-validator';
 export * from './lib/validators/url-validator';
-
-
