@@ -60,6 +60,8 @@ export * from './lib/model/pager/pager-request.model';
 export * from './lib/model/pager/pager-result.model';
 export * from './lib/model/status-update/status-update.model';
 export * from './lib/model/status-update/with-status-updates.model';
+export * from './lib/model/types/locale.model';
+export * from './lib/model/types/uri.model';
 export * from './lib/model/with-branch.model';
 export * from './lib/model/with-branches.model';
 export * from './lib/model/with-email.model';
