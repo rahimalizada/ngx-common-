@@ -14,13 +14,14 @@ import { StatusListComponent } from './component/status-list/status-list.compone
 import { ProgressIndicatorDirective } from './directives/progress-indicator.directive';
 import { ProgressIndicatorInterceptor } from './interceptors/progress-indicator.interceptor';
 import { PwaLaunchModeInterceptor } from './interceptors/pwa-launch-mode.interceptor';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { SafePipe } from './pipes/safe.pipe';
 import { ValueOrDashPipe } from './pipes/value-or-dash.pipe';
 import { YesNoPipe } from './pipes/yes-no.pipe';
 import { DateParserInterceptor } from './rest/date-parser.interceptor';
 
 @NgModule({
-  declarations: [YesNoPipe, ValueOrDashPipe, SafePipe, ProgressIndicatorDirective, StatusEditComponent, StatusListComponent],
+  declarations: [YesNoPipe, ValueOrDashPipe, SafePipe, SafeHtmlPipe, ProgressIndicatorDirective, StatusEditComponent, StatusListComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -38,6 +39,7 @@ import { DateParserInterceptor } from './rest/date-parser.interceptor';
     YesNoPipe,
     ValueOrDashPipe,
     SafePipe,
+    SafeHtmlPipe,
     ProgressIndicatorDirective,
     StatusEditComponent,
     StatusListComponent,
