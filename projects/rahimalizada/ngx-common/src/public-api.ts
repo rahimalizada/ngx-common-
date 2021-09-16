@@ -68,6 +68,7 @@ export * from './lib/model/with-email.model';
 export * from './lib/model/with-id.model';
 export * from './lib/model/with-updated.model';
 export * from './lib/ngx-common.module';
+export * from './lib/pipes/safe-html.pipe';
 export * from './lib/pipes/safe.pipe';
 export * from './lib/pipes/value-or-dash.pipe';
 export * from './lib/pipes/yes-no-pipe-settings';
