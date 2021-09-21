@@ -167,6 +167,7 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     if (authResult) {
       this.loggedInSubject.next(this.isValid(authResult));
       this.authResultSubject.next(authResult);
+      this.accountSubject.next(authResult.subject);
     }
   }
 }
