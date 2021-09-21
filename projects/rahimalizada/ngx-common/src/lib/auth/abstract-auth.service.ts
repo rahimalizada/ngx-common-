@@ -9,7 +9,7 @@ import { AbstractAccount } from './../model/account/abstract-account.model';
 export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unknown>> {
   loggedInSubject = new BehaviorSubject<boolean>(false);
   authResultSubject = new BehaviorSubject<AuthResult<T> | null>(null);
-  accountSubject = new ReplaySubject<T>();
+  accountSubject = new ReplaySubject<T>(1);
   shiroTrie = shiro.newTrie();
 
   protected jwtHelper = new JwtHelperService();
