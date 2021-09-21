@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { BehaviorSubject, Observable, Observer } from 'rxjs';
+import { BehaviorSubject, Observable, Observer, ReplaySubject } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import * as shiro from 'shiro-trie';
 import { AuthResult, LoginRequest, ResetPasswordConfirmation } from '../../public-api';
@@ -9,6 +9,7 @@ import { AbstractAccount } from './../model/account/abstract-account.model';
 export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unknown>> {
   loggedInSubject = new BehaviorSubject<boolean>(false);
   authResultSubject = new BehaviorSubject<AuthResult<T> | null>(null);
+  accountSubject = new ReplaySubject<T>();
   shiroTrie = shiro.newTrie();
 
   protected jwtHelper = new JwtHelperService();
@@ -54,6 +55,7 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
     localStorage.setItem(this.storageItemId, JSON.stringify(authResult));
     this.loggedInSubject.next(this.isValid(authResult));
     this.authResultSubject.next(authResult);
+    this.accountSubject.next(authResult.subject);
   }
 
   isLoggedIn(): boolean {
