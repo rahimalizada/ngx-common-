@@ -8,7 +8,7 @@ import { AuthResult } from './auth-result.model';
 import { PasswordChangeRequest } from './password-change-request.model';
 
 export class AbstractAccountService<S extends AbstractAccount<T, U>, T, U> extends AbstractRestService<S> {
-  constructor(httpClient: HttpClient, basePath: string, private authService: AbstractAuthService<S>) {
+  constructor(httpClient: HttpClient, basePath: string, protected authService: AbstractAuthService<S>) {
     super(httpClient, basePath);
   }
 
