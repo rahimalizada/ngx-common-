@@ -64,6 +64,7 @@ export abstract class AbstractAuthService<T extends AbstractAccount<unknown, unk
   }
 
   renewToken(): Observable<AuthResult<T> | null> {
+    // TODO should not return null or should return void
     if (!this.authResultSubject.value || !this.authResultSubject.value.refreshToken) {
       this.logout();
       return new Observable((observer: Observer<AuthResult<T> | null>) => {
